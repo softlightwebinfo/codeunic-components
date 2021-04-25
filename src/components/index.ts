@@ -6,6 +6,7 @@ import Card from './Card/Card';
 import CardTitleDescription from './CardTitleDescription/CardTitleDescription';
 import CardTitleDetail from './CardTitleDetail/CardTitleDetail';
 import Carousel from './Carousel/Carousel';
+import Container from './Container/Container';
 import ContainerFluid from './ContainerFluid/ContainerFluid';
 import Grid from './Grid/Grid';
 import Image from './Image/Image';
@@ -28,6 +29,7 @@ export {
 	CardTitleDescription,
 	CardTitleDetail,
 	Carousel,
+	Container,
 	ContainerFluid,
 	Grid,
 	Image,
