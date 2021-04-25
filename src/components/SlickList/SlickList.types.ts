@@ -4,6 +4,7 @@ import { SlickItemProps } from "../SlickItem/SlickItem.types";
 import { ReactNode } from "react";
 
 export interface SlickListProps extends IProps {
+    isDetail?: boolean;
     data: SlickListPropsData;
     active: number;
     col?: number;

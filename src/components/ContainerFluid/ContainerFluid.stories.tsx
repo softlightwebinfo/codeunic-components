@@ -3,7 +3,7 @@ import React from "react";
 import ContainerFluid from "./ContainerFluid";
 
 export default {
-    title: "ContainerFluid"
+    title: "Responsive/ContainerFluid"
 };
 
 export const Default = () => <ContainerFluid>Test</ContainerFluid>;

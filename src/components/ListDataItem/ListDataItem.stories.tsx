@@ -3,7 +3,7 @@ import React from "react";
 import ListDataItem from "./ListDataItem";
 
 export default {
-    title: "ListDataItem"
+    title: "List/ListDataItem"
 };
 
-export const WithBar = () => <ListDataItem header={"Protagonizada port:"} description={"Karen, James, Jones, Perez"} />;
+export const Default = () => <ListDataItem header={"Protagonizada port"} description={"Karen, James, Jones, Perez"} />;

@@ -10,7 +10,9 @@ import Grid from "../Grid/Grid";
 
 const SlickList: React.FC<SlickListProps> = (props) => {
     const {className, style, data = [], active = 0} = props;
-    const bm = new BEM("SlickList", {});
+    const bm = new BEM("SlickList", {
+        isDetail: props.isDetail,
+    });
     bm.Append(className)
     const Component: any = props.component ?? SlickItem;
 
@@ -27,6 +29,12 @@ const SlickList: React.FC<SlickListProps> = (props) => {
                 {dataComponents.slice(props.col * active, active > 0 ? (props.col * active) + props.col : props.col)}
             </Grid>
         )
+    } else if (props.isDetail) {
+        componentResult = [
+            <Component key={0} {...data[active - 1] ?? data[data.length - 1]}/>,
+            dataComponents,
+            <Component key={2} {...data[active + 1] ?? data[0]}/>
+        ];
     } else {
         componentResult = dataComponents;
     }

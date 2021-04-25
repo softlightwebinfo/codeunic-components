@@ -7,4 +7,5 @@ export interface CarouselProps extends IProps {
     data?: SlickListPropsData;
     component?: ReactNode;
     col?: number;
+    isDetail?: boolean;
 }

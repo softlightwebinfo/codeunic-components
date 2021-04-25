@@ -30,8 +30,14 @@ const Carousel: React.FC<CarouselProps> = (props) => {
             className={bm.toString()}
         >
             <SlickArrow onClick={onClick(-1)} left/>
-            <SlickList col={props.col} component={props.component} active={active} data={props.data}
-                       children={props.children}/>
+            <SlickList
+                isDetail={props.isDetail}
+                col={props.col}
+                component={props.component}
+                active={active}
+                data={props.data}
+                children={props.children}
+            />
             <SlickArrow onClick={onClick(1)}/>
         </div>
     );

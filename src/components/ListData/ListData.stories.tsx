@@ -3,7 +3,7 @@ import React from "react";
 import ListData from "./ListData";
 
 export default {
-    title: "ListData"
+    title: "List/ListData"
 };
 
 export const Default = () => <ListData data={[

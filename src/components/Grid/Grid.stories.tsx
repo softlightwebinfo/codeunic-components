@@ -4,7 +4,7 @@ import Grid from "./Grid";
 import Card from "../Card/Card";
 
 export default {
-    title: "Grid"
+    title: "Responsive/Grid"
 };
 
 export const Default = () => (
