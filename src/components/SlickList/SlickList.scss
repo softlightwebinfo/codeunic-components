@@ -1,0 +1,19 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.SlickList {
+  display: flex;
+
+  .SlickItem {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex: none;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}

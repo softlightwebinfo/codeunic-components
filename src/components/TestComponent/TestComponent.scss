@@ -1,5 +1,5 @@
-@import "../variables.scss";
-@import "../typography.scss";
+@import "src/sass/variables";
+@import "src/sass/typography";
 
 .test-component {
   background-color: $harvey-white;

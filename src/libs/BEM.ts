@@ -1,4 +1,4 @@
-import { IObjectMix } from "../interfaces/IObject";
+import { IObjectMix } from "../interfaces/TObject";
 
 export enum ITBem {
     DEFAULT = '-',

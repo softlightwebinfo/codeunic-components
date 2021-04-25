@@ -69,6 +69,7 @@
   --iq-primary-light: #f3fffe;
   --iq-bg1: #363636;
   --iq-disable: #313946;
+  --active: black;
 }
 
 * {
@@ -76,4 +77,61 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  color: var(--iq-body-text);
+  background: var(--iq-body-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+  color: var(--iq-white);
+}
+
+::selection {
+  background: var(--iq-primary);
+  color: var(--iq-white);
+  text-shadow: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
 }

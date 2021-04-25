@@ -1,0 +1,49 @@
+@import "../../sass/placeholder";
+
+.SlickItem {
+  position: relative;
+  flex: 1;
+  transition: all 2s linear;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+    text-align: left;
+
+    .SlickList & {
+      margin-left: 80px;
+    }
+  }
+
+  h1 {
+    @extend %BigTitle;
+    @extend %AnimTitle;
+    animation-delay: 0.6s;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    @extend %AnimSubTitle;
+    animation-delay: 1s;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    color: var(--iq-body-text);
+    -webkit-box-orient: vertical;
+  }
+}

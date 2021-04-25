@@ -1,0 +1,40 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/placeholder.scss";
+
+.CardTitleDetail {
+  h1 {
+    @extend %BigTitle;
+    @extend %AnimTitle;
+    animation-delay: 0.6s;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    @extend %AnimSubTitle;
+    animation-delay: 1s;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    color: var(--iq-body-text);
+    -webkit-box-orient: vertical;
+    margin-bottom: $margin-bottom;
+  }
+
+  &__buttons {
+    @extend %AnimSubTitle;
+    animation-delay: 1.4s;
+  }
+
+  .Button {
+    color: var(--iq-body-text);
+  }
+
+  .ListData {
+    @extend %AnimRight;
+  }
+}

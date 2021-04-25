@@ -1,0 +1,22 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/placeholder.scss";
+
+.VideoPremium {
+  display: grid;
+  grid-template-columns: 580px 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  grid-gap: 80px;
+
+  &__image {
+    @extend %AnimSubTitle;
+    flex: 1;
+  }
+
+  &__detail {
+    flex: 300px;
+  }
+}

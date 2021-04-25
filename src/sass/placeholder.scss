@@ -1,0 +1,51 @@
+@import "./animation";
+
+%BigTitle {
+  font-size: 80px;
+  background-repeat: repeat-x;
+  background-position: 100% 100%;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+%Animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+%AnimTitle {
+  @extend %Animated;
+  opacity: 0;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  transition: opacity .5s ease .3s;
+  transition: 1s;
+  animation-name: fadeInLeft;
+}
+
+%AnimSubTitle {
+  @extend %Animated;
+  animation-name: fadeInUp;
+  opacity: 0;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  transition: opacity .5s ease .3s;
+  transition: 1s;
+}
+
+%AnimRight {
+  @extend %Animated;
+  animation-name: fadeInRight;
+  opacity: 0;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  transition: opacity .5s ease .3s;
+  transition: 1s;
+}

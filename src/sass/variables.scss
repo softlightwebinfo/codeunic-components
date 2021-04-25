@@ -10,3 +10,17 @@ $button-default: var(--blue);
 
 //Transitions
 $transition-bg: background-color .3s ease-in-out;
+
+//Separators
+$margin-bottom: 1.2em;
+$grid-gap: .8em;
+
+//Title
+$title: 1.1em;
+
+//responsive
+$responsive-mobile: 480px;
+$responsive-tablet: 768px;
+$responsive-laptops: 1024px;
+$responsive-desktop: 1200px;
+$responsive-large: 1400px;

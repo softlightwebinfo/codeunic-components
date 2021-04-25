@@ -1,0 +1,31 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+
+.SlickArrow {
+  --active: #fff;
+  --border: hsla(0, 0%, 100%, 0.12);
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+  }
+
+  &--left {
+    transform: rotate(180deg);
+  }
+}

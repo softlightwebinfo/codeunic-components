@@ -1,0 +1,20 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.TitleCategory {
+  @include font-defaults;
+  margin-bottom: $margin-bottom;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  h4 {
+    color: var(--iq-white);
+    font-size: 1.667em;
+  }
+
+  .Button {
+    color: var(--iq-body-text);
+  }
+}

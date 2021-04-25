@@ -10,7 +10,8 @@
  * - parameters - an object of global parameters
  * - globalTypes - definition of globalTypes
  */
-
+import "../src/sass/global.scss";
+import "../src/sass/storybook.scss";
 /**
  * Decorators
  *

@@ -1,0 +1,17 @@
+@import "../../sass/variables";
+
+.ListDataItem {
+  font-size: $title;
+  font-weight: 500;
+
+  b {
+    color: var(--iq-primary);
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--iq-body-text);
+    margin-left: 5px;
+  }
+}

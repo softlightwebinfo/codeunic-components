@@ -4,3 +4,27 @@
   -moz-transition: $attr;
   -o-transition: $attr;
 }
+
+@mixin backgroundColor($hover: true) {
+  &--primary {
+    color: #fff;
+    background-color: var(--iq-primary);
+
+    @if ($hover) {
+      &:hover {
+        background-color: var(--iq-primary-hover);
+      }
+    }
+  }
+
+  &--secondary {
+    color: #fff;
+    background-color: var(--iq-secondary);
+
+    @if ($hover) {
+      &:hover {
+        background-color: var(--iq-secondary-hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.LayoutCardVideo {
+  @include font-defaults;
+
+  .CardTitleDescription {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

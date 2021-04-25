@@ -1,0 +1,45 @@
+// Generated with util/create-component.js
+@import "src/sass/variables";
+@import "src/sass/typography";
+@import "src/sass/mixin";
+
+.Button {
+  @include font-defaults;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  &--default {
+    color: #fff;
+    background-color: $button-default;
+    border-color: $button-default;
+    @include transition($transition-bg);
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+  }
+
+  &--single {
+    background-color: var(--iq-primary);
+    border: 1px solid var(--iq-primary-hover);
+    color: var(--iq-white);
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.Arrow {
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--active);
+    display: block;
+    transform-origin: 10.2px 50%;
+  }
+
+  &::before {
+    transform: rotate(-40deg);
+  }
+
+  &::after {
+    transform: rotate(40deg);
+  }
+}

@@ -1,0 +1,21 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardTitleDescription {
+  @include font-defaults;
+
+  h6 {
+    font-size: 1.5em;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    > span {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+}

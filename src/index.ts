@@ -1,3 +1,3 @@
-import TestComponent from "./TestComponent";
-
-export { TestComponent };
+import "./sass/global.scss";
+export * from './components';
+export * from './layouts';

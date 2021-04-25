@@ -1,0 +1,61 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/placeholder";
+
+.SlickVideoItem {
+  position: relative;
+  flex: 1;
+  transition: all 2s linear;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+    text-align: left;
+    right: 0;
+
+    .SlickList & {
+      margin-left: 80px;
+    }
+  }
+
+  .Button {
+    color: var(--iq-body-text);
+  }
+
+  &__right {
+    @extend %AnimSubTitle;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #000, #141414 35%, rgba(83, 100, 141, 0));
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+  }
+}
