@@ -25,7 +25,7 @@ const CardTitleDetail: React.FC<CardTitleDetailProps> = (props) => {
             </div>
             <style>{`
                 h1 {              
-                    background: url(images/bigTitle.jpg)                  
+                    background: url(/images/bigTitle.jpg)                  
                 }
             `}</style>
         </div>

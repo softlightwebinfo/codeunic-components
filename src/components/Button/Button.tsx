@@ -11,8 +11,10 @@ const Button: React.FC<ButtonProps> = ({children, ...props}) => {
         default: props.default,
         single: props.single,
     });
+    bm.Append(props.className);
     return (
         <button
+            style={props.style}
             onClick={props.onClick}
             className={bm.toString()}
         >

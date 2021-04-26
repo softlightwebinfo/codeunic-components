@@ -1,0 +1,32 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.PriceRow {
+  border-bottom: 1px solid var(--iq-body-bg);
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &__item {
+    border: none;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 28px 10px 20px;
+  }
+
+  &__title {
+    text-align: right;
+    padding-right: 60px;
+  }
+
+  &__article {
+    text-align: center;
+    font-size: 1.8em;
+
+    &--active {
+      color: var(--iq-primary);
+    }
+  }
+}

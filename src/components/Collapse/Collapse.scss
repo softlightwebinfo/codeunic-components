@@ -1,0 +1,35 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Collapse {
+  margin-bottom: 30px;
+  padding: 0;
+  overflow: hidden;
+  background: var(--iq-bg1);
+  border-radius: 5px;
+
+  > header {
+    border-radius: 4px;
+    position: relative;
+    padding: 15px;
+    line-height: normal;
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    color: var(--white-color);
+    font-weight: 600;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  > section {
+    text-align: left;
+    padding: 30px 30px;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 1px 0 0 0;
+    border-image-source: linear-gradient(270deg,rgba(209,208,207,0),rgba(209,208,207,.6),rgba(209,208,207,0));
+  }
+}

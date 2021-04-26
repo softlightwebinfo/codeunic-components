@@ -1,0 +1,96 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.PriceBox {
+  $then: &;
+  background: var(--iq-body-bg);
+  position: relative;
+  transition: all .4s ease;
+  display: inline-flex;
+  margin-top: 25px;
+
+  h3 {
+    color: var(--iq-white);
+    font-size: 2.369em;
+    text-align: center;
+    padding: 50px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    b {
+      margin-right: .5rem;
+    }
+
+    span {
+      margin-right: .5rem;
+    }
+  }
+
+  small {
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+
+  > span {
+    font-size: 18px;
+    line-height: 28px;
+    position: absolute;
+    background: var(--iq-primary);
+    padding: 9px 25px;
+    color: var(--iq-white-color);
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    font-weight: 500;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: -1px;
+      border-top: 16px solid transparent;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      right: -15px;
+      top: -1px;
+      border-left: 16px solid var(--iq-primary-hover);
+      border-top: 16px solid transparent;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      left: -15px;
+      top: -1px;
+      border-right: 16px solid var(--iq-primary-hover);
+      border-top: 16px solid transparent;
+    }
+  }
+
+  &--active {
+    background: var(--iq-primary);
+
+    > span {
+      background: #fff;
+      color: var(--iq-primary);
+
+      &::before {
+        border-left: 16px solid var(--iq-primary-hover);
+        right: -16px;
+      }
+    }
+  }
+}
