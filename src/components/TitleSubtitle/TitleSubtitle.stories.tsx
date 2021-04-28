@@ -6,7 +6,7 @@ export default {
     title: "Title/TitleSubtitle"
 };
 
-export const WithBar = () => (
+export const Default = () => (
     <TitleSubtitle
         title={"Selecciona tu plan"}
         subTitle={"Sin tarifas ocultas, alquiler de equipos ni citas de instalacion"}

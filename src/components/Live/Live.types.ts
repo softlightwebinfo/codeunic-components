@@ -1,9 +1,9 @@
 // Generated with util/create-component.js
 import { IProps } from "../../interfaces/IProps";
 
-export interface CategoryProps extends IProps {
-    title?: string;
-    badge?: string;
+export interface LiveProps extends IProps {
+    title: string;
+    live: boolean;
+    viewers: number;
     image: string;
-    list?: string[];
 }

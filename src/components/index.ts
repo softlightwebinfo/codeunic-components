@@ -28,6 +28,7 @@ import Image from './Image/Image';
 import List from './List/List';
 import ListData from './ListData/ListData';
 import ListDataItem from './ListDataItem/ListDataItem';
+import Live from './Live/Live';
 import Logo from './Logo/Logo';
 import Menu from './Menu/Menu';
 import Nav from './Nav/Nav';
@@ -80,6 +81,7 @@ export {
 	List,
 	ListData,
 	ListDataItem,
+	Live,
 	Logo,
 	Menu,
 	Nav,

@@ -53,7 +53,8 @@
   }
 
   .Badge {
-    display: flex;
+    display: inline-flex;
+    width: min-content;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -61,7 +62,6 @@
     transition: 0.5s;
     pointer-events: none;
     height: 30px;
-    width: auto;
     padding: 0 12px;
     border-radius: 10px;
     background-color: rgba(21, 31, 48, 0.75);

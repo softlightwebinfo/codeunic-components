@@ -15,7 +15,7 @@ const Category: React.FC<CategoryProps> = (props) => {
                 <Image title={props.title} alt={props.title} src={props.image}/>
             </div>
             <div className={bm.Children("content")}>
-                <h3 className={bm.Children("title")}>{props.title}</h3>
+                {props.title && <h3 className={bm.Children("title")}>{props.title}</h3>}
                 {props.badge && <Badge label={props.badge}/>}
                 {props.list && (
                     <div className={bm.Children("list")}>
