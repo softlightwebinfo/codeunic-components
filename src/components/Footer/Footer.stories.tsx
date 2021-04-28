@@ -8,6 +8,7 @@ import Logo from "../Logo/Logo";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import TitleText from "../TitleText/TitleText";
 import Nav from "../Nav/Nav";
+import FooterCopyright from "../FooterCopyright/FooterCopyright";
 
 export default {
     title: "Footer/Footer"
@@ -89,6 +90,25 @@ export const Layout = () => (
                     />
                 </GridColumn>
             </Grid>
+        </Container>
+        <Container>
+            <FooterCopyright
+                left={{
+                    name: "STREAM Premium",
+                    by: "codeunic",
+                    url: "https://www.codeunic.com"
+                }}
+                right={[
+                    {
+                        label: "Politica de privacidad",
+                        url: "/example"
+                    },
+                    {
+                        label: "Términos y condiciones",
+                        url: "/example"
+                    }
+                ]}
+            />
         </Container>
     </Footer>
 )

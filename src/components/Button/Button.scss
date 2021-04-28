@@ -42,4 +42,13 @@
     text-transform: uppercase;
     border-radius: 0;
   }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--dark {
+    background-color: $harvey-black;
+    color: white;
+  }
 }

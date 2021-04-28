@@ -7,6 +7,8 @@ export interface ButtonProps extends IProps {
     children?: ReactNode | ReactElement | string;
     default?: boolean;
     single?: boolean;
+    dark?: boolean;
+    block?: boolean;
 
     onClick(evt: EOnClick): any;
 }
