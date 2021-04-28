@@ -1,0 +1,17 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardTitle {
+  border-radius: 5px 5px 0 0;
+  margin-left: 1rem;
+  flex: 1;
+
+  p {
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,13 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Dashboard {
+  &__content {
+    overflow: hidden;
+    margin-left: 300px;
+    padding: 73px 0;
+    min-height: 100vh;
+    transition: all .3s ease-out 0s;
+  }
+}

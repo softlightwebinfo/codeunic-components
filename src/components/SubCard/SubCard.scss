@@ -1,0 +1,26 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.SubCard {
+  font-size: .9em;
+  padding: 15px;
+  line-height: normal;
+  color: inherit;
+  border-bottom: 1px solid #141414;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  transition: all .5s ease-out 0s;
+
+  &:hover {
+    background: var(--iq-light-primary);
+    cursor: pointer;
+
+    .CardIcon {
+      color: var(--iq-primary);
+    }
+  }
+}

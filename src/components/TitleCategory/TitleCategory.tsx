@@ -5,7 +5,7 @@ import { TitleCategoryProps } from "./TitleCategory.types";
 
 import "./TitleCategory.scss";
 import { BEM } from "../../libs/BEM";
-import { Button } from "../../index";
+import Button from "../Button/Button";
 
 const TitleCategory: React.FC<TitleCategoryProps> = (props) => {
     const bm = new BEM("TitleCategory", {});
@@ -18,4 +18,3 @@ const TitleCategory: React.FC<TitleCategoryProps> = (props) => {
 }
 
 export default TitleCategory;
-

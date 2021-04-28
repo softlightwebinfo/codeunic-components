@@ -1,0 +1,21 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardIcon {
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
+  font-size: 22px;
+  background: var(--iq-light-primary);
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &,
+  &:focus,
+  &:hover {
+    color: var(--iq-primary);
+  }
+}

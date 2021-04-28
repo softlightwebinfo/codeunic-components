@@ -1,0 +1,20 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardHeader {
+  border-radius: 5px 5px 0 0;
+  color: var(--iq-white);
+  background: var(--iq-primary);
+  padding: 1rem;
+
+  h5 {
+    font-size: 1.2em;
+    color: var(--iq-white);
+  }
+
+  span {
+    color: var(--iq-white);
+    font-size: 12px;
+  }
+}

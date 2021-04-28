@@ -1,0 +1,17 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  a {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+  }
+}

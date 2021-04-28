@@ -1,0 +1,18 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Logo {
+  display: inline-flex;
+  align-items: center;
+  color: var(--iq-primary);
+
+  .Image {
+    flex: 0;
+
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+}

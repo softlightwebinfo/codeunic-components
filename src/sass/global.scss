@@ -98,6 +98,14 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--iq-white);
 }
 
+a {
+  text-decoration: none;
+  transition: 0.5s ease;
+  transition-property: color, background-color, border-color;
+  color: #007bff;
+  background-color: transparent;
+}
+
 ::selection {
   background: var(--iq-primary);
   color: var(--iq-white);

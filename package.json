@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/components",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -45,7 +45,7 @@
     "@babel/core": "^7.12.10",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
-    "@storybook/react": "^6.1.12",
+    "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^11.2.3",
     "@types/jest": "^24.0.24",
@@ -69,6 +69,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "postcss": "^8.2.12",

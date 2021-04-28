@@ -1,0 +1,33 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.SocialIcons {
+  display: flex;
+  grid-gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    a svg.svg-inline--fa {
+      opacity: .7;
+    }
+  }
+
+  a svg.svg-inline--fa {
+    $s: 30px;
+    transition: all .3s ease-in-out;
+    border-radius: 50%;
+    background-color: var(--iq-primary);
+    color: var(--iq-white);
+    padding: 6px;
+    height: $s;
+    width: $s;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

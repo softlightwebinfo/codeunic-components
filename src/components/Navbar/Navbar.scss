@@ -1,0 +1,43 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Navbar {
+  padding: 0 15px 0 30px;
+  min-height: 73px;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: calc(100% - 300px);
+  display: flex;
+  z-index: 99;
+  background: var(--iq-light-card);
+  margin: 0;
+  transition: all .45s ease 0s;
+  align-items: center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__left {
+    flex: 1;
+  }
+
+  &__right {
+    > * {
+      margin-left: 20px;
+    }
+  }
+
+  &__left,
+  &__center,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+}

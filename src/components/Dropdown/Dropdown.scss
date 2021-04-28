@@ -1,0 +1,28 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Dropdown {
+  position: relative;
+
+  &__menu {
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    -webkit-animation: fadeInBottom .6s cubic-bezier(.39, .575, .565, 1) both;
+    animation: fadeInBottom .6s cubic-bezier(.39, .575, .565, 1) both;
+    transform: translateY(100%);
+    background-color: var(--iq-white);
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(44, 101, 144, 10%);
+    transition: all .3s ease-out 0s;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

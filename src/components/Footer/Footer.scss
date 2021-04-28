@@ -1,0 +1,13 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Footer {
+  background-color: #131720;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,38 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__item {
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+
+    a {
+      font-size: 16px;
+      white-space: nowrap;
+      color: var(--iq-body-text);
+      position: relative;
+      padding: 10px 20px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 0;
+      text-transform: capitalize;
+      transition: all .5s ease-out 0s;
+      &:hover {
+        color: var(--iq-primary);
+        cursor: pointer;
+      }
+    }
+  }
+}

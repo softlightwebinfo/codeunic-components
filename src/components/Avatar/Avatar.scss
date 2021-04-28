@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Avatar {
+  img {
+    $w: 50px;
+    width: $w;
+    height: $w;
+    object-fit: cover;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
