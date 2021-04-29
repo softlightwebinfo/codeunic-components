@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/components",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -75,6 +75,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "hls.js": "^1.0.2",
-    "react-hls-player": "^3.0.1"
+    "vimond-replay": "^3.0.0"
   }
 }
