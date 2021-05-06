@@ -1,0 +1,22 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ViewVideoNoMatch {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    h2 {
+      font-size: 2.1em;
+      font-weight: 300;
+    }
+
+    .Button {
+      margin-top: 20px;
+    }
+  }
+}

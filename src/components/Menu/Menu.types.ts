@@ -5,12 +5,19 @@ import { ReactNode } from "react";
 
 export type IMenu = {
     menu?: TMenu;
-    label: string;
-    icon: ReactNode;
+    label?: string;
+    icon?: ReactNode;
 };
 
 export type TMenu = IObjectCustom<IMenu>;
 
 export interface MenuProps extends IProps {
+    horizontal?: boolean;
     menu: TMenu;
+
+    component?(component: ReactNode, data: IMenuData);
+}
+
+export interface IMenuData extends IMenu {
+    key: string;
 }

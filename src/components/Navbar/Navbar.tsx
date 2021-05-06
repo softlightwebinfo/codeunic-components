@@ -5,7 +5,9 @@ import "./Navbar.scss";
 import { BEM } from "../../libs/BEM";
 
 const Navbar: React.FC<NavbarProps> = (props) => {
-    const bm = new BEM("Navbar", {});
+    const bm = new BEM("Navbar", {
+        default: props.default,
+    });
     bm.Append(props.className);
     return (
         <div style={props.style} className={bm.toString()}>

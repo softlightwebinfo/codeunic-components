@@ -1,0 +1,24 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.InputGroup {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  &__content {
+    input {
+      padding-left: 50px;
+    }
+  }
+}

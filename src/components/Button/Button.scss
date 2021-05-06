@@ -51,4 +51,12 @@
     background-color: $harvey-black;
     color: white;
   }
+
+  &--theme {
+    @include backgroundColor(true, '-');
+  }
+
+  > svg {
+    margin-right: 10px;
+  }
 }

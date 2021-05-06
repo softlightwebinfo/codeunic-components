@@ -1,0 +1,20 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.RatedItem {
+  header, footer {
+    padding: 20px;
+  }
+
+  h6 {
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+
+  footer {
+    padding-top: 0;
+    display: flex;
+    gap: 20px;
+  }
+}

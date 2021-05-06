@@ -1,0 +1,18 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.AvatarTitle {
+  display: flex;
+  align-items: center;
+
+  > span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+}

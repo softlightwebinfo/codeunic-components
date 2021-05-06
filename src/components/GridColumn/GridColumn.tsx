@@ -15,6 +15,7 @@ const GridColumn: React.FC<GridColumnProps> = (props) => {
             style={{
                 ...props.style,
                 gridColumn: props.gridColumn,
+                gridRow: props.gridRow,
             }}
         >
             {props.children}

@@ -7,6 +7,7 @@ import { BEM } from "../../libs/BEM";
 const ContainerFluid: React.FC<ContainerFluidProps> = ({children, ...props}) => {
     const bm = new BEM("ContainerFluid", {
         default: props.default,
+        all: props.all,
     });
     bm.Append(props.className);
     return (

@@ -1,0 +1,29 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.MeetingInfo {
+  background: white;
+  top: 50px;
+  left: 50px;
+  border-radius: 10px;
+  padding: 25px;
+  width: 350px;
+
+  &__people-btn {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__meet {
+    margin-bottom: 15px
+  }
+
+  &__text {
+    margin-top: 15px;
+  }
+
+  &__info {
+    margin-bottom: 15px;
+  }
+}

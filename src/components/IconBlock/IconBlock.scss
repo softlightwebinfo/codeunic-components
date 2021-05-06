@@ -1,0 +1,75 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.IconBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  $then: &;
+  color: #555;
+
+  &__icon {
+    margin-left: 10px;
+    font-size: 1.25em;
+    color: #555;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: #eee;
+  }
+
+  &--icon {
+    $sz: 50px;
+    background: #fff;
+    border: 1px solid rgb(223, 223, 223);
+    width: $sz;
+    height: $sz;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    #{$then}__icon {
+      margin-left: 0;
+    }
+  }
+
+  &--red {
+    color: $harvey-red;
+
+    #{$then}__icon {
+      color: $harvey-red;
+    }
+  }
+
+  &--isTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 146px;
+    color: #555;
+
+    #{$then}__icon {
+      font-size: 1.25em;
+      margin: 0;
+    }
+
+    #{$then}__title {
+      margin: 0;
+      font-size: .8em;
+      font-weight: 500;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: #eee;
+    }
+  }
+}

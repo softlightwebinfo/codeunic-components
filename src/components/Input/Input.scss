@@ -1,0 +1,10 @@
+// Generated with util/create-component.js
+@import "../../sass/mixin.scss";
+
+.Input {
+  display: block;
+
+  input {
+    @include Input;
+  }
+}

@@ -1,0 +1,43 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Comment {
+  margin-bottom: 20px;
+  display: block;
+  background-color: $harvey-black;
+  padding: 20px;
+  border-radius: 16px;
+
+  &__author {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: block;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px 0;
+    position: relative;
+    border-top: 1px solid rgba(47, 128, 237, 0.1);
+    border-bottom: 1px solid rgba(47, 128, 237, 0.1);
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 0;
+    position: relative;
+  }
+
+  &--isQuote,
+  &--isAnswer {
+    margin-left: 20px;
+    @media (min-width: 768px) {
+      margin-left: 30px;
+    }
+  }
+}

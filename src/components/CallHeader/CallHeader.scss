@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CallHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border-radius: 0 0 0 10px;
+  overflow: hidden;
+}

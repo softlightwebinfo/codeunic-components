@@ -5,7 +5,10 @@ import "./List.scss";
 import { BEM } from "../../libs/BEM";
 
 const List: React.FC<ListProps> = (props) => {
-    const bm = new BEM("List", {});
+    const bm = new BEM("List", {
+        separator: props.separator,
+        horizontal: props.horizontal,
+    });
     bm.Append(props.className);
     return (
         <ul

@@ -1,0 +1,9 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ChatSection {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}

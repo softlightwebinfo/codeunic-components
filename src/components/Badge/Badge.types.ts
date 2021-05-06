@@ -6,4 +6,5 @@ export interface BadgeProps extends IProps {
     label: string;
     theme?: TTheme;
     radius?: boolean;
+    clip?: boolean;
 }

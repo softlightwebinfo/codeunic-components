@@ -1,8 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { TitleCategoryProps } from "./TitleCategory.types";
-
 import "./TitleCategory.scss";
 import { BEM } from "../../libs/BEM";
 import Button from "../Button/Button";
@@ -12,7 +10,8 @@ const TitleCategory: React.FC<TitleCategoryProps> = (props) => {
     return (
         <div className={bm.toString()} style={props.style}>
             <h4>{props.title}</h4>
-            <Button onClick={props.onClick}>{props.buttonText ?? "Ver todo"}</Button>
+            {props.right && <div>{props.right}</div>}
+            {!props.hiddenRight && <Button onClick={props.onClick}>{props.buttonText ?? "Ver todo"}</Button>}
         </div>
     );
 }

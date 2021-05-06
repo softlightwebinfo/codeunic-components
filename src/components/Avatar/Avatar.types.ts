@@ -2,5 +2,7 @@
 import { IProps } from "../../interfaces/IProps";
 
 export interface AvatarProps extends IProps {
+    square?: boolean;
+    default?: boolean;
     image: string;
 }

@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ViewVideoDetail {
+  .VideoPlayer {
+    .video-js {
+      width: 100%;
+      border-radius: 15px;
+      height: 345px;
+      overflow: hidden;
+    }
+  }
+}

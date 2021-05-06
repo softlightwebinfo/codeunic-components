@@ -17,6 +17,14 @@ import Avatar from "../../components/Avatar/Avatar";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 import { ButtonDefault } from "../../components";
 import SubCard from "../../components/SubCard/SubCard";
+import AvatarHeader from "../../components/AvatarHeader/AvatarHeader";
+import Grid from "../../components/Grid/Grid";
+import GridColumn from "../../components/GridColumn/GridColumn";
+import WidgetStat from "../../widgets/WidgetStat/WidgetStat";
+import ContainerFluid from "../../components/ContainerFluid/ContainerFluid";
+import WidgetRatedItem from "../../widgets/WidgetRatedItem/WidgetRatedItem";
+import Widget from "../../widgets/Widget/Widget";
+import RatedItem from "../../components/RatedItem/RatedItem";
 
 export default {
     title: "Dashboard/Dashboard"
@@ -59,14 +67,37 @@ export const Default = () => (
                         trigger={<FontAwesomeIcon icon={faBell}/>}
                         menu={
                             <DropdownMenu
-                                title={"Hola Juan"}
-                                subTitle={"Disponible"}
-                            />
+                                title={"All notifications"}
+                                badge={"5"}
+                            >
+                                {[...new Array(4)].map(() => (
+                                    <AvatarHeader
+                                        default
+                                        avatar={"/images/avatar.png"}
+                                        title={"Why do we use it?"}
+                                        subTitle={"20 Apr"}
+                                    />
+                                ))}
+                            </DropdownMenu>
                         }
                     />
                     <Dropdown
                         trigger={<FontAwesomeIcon icon={faEnvelope}/>}
-                        menu={<DropdownMenu title={"Hola Juan"} subTitle={"Disponible"}/>}
+                        menu={
+                            <DropdownMenu
+                                title={"All messages"}
+                                badge={"20"}
+                            >
+                                {[...new Array(4)].map(() => (
+                                    <AvatarHeader
+                                        default
+                                        avatar={"/images/avatar.png"}
+                                        title={"Why do we use it?"}
+                                        subTitle={"20 Apr"}
+                                    />
+                                ))}
+                            </DropdownMenu>
+                        }
                     />
                     <Dropdown
                         trigger={<Avatar image={"/images/avatar.png"}/>}
@@ -78,7 +109,7 @@ export const Default = () => (
                                     <ButtonDefault
                                         onClick={console.log}
                                     >
-                                       <span> Desconectar </span> <FontAwesomeIcon icon={faLock}/>
+                                        <span> Desconectar </span> <FontAwesomeIcon icon={faLock}/>
                                     </ButtonDefault>
                                 }
                             >
@@ -109,6 +140,67 @@ export const Default = () => (
             )
         }}
     >
-        Hello world
+       <ContainerFluid all>
+           <Grid col={12}>
+               <GridColumn gridColumn={"span 8"}>
+                   <Grid col={4}>
+                       <WidgetStat
+                           text={"View"}
+                           textSecondary={35}
+                           color={"red"}
+                           title={"+24k"}
+                           icon={<FontAwesomeIcon icon={faHome}/>}
+                           isUp={true}
+                       />
+                       <WidgetStat
+                           text={"View"}
+                           textSecondary={35}
+                           color={"red"}
+                           title={"+24k"}
+                           icon={<FontAwesomeIcon icon={faHome}/>}
+                           isUp={true}
+                       />
+                       <WidgetStat
+                           text={"View"}
+                           textSecondary={35}
+                           color={"red"}
+                           title={"+24k"}
+                           icon={<FontAwesomeIcon icon={faHome}/>}
+                           isUp={true}
+                       />
+                       <WidgetStat
+                           text={"View"}
+                           textSecondary={35}
+                           color={"red"}
+                           title={"+24k"}
+                           icon={<FontAwesomeIcon icon={faHome}/>}
+                           isUp={true}
+                       />
+                   </Grid>
+               </GridColumn>
+               <GridColumn gridColumn={"span 8"}>
+                   <WidgetRatedItem
+                       title={"Top Rated Item"}
+                       data={[
+                           {image: "/images/category.jpeg", title: "Last Race", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 2", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 3", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 4", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 5", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 6", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 7", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 8", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 9", description: "TV show", views: "120", play: "20"},
+                           {image: "/images/category.jpeg", title: "Last Race 10", description: "TV show", views: "120", play: "20"},
+                       ]}
+                   />
+               </GridColumn>
+               <GridColumn gridColumn={"9/span 4"} gridRow={"1/span 2"}>
+                   <Widget>
+                       <RatedItem title={"Last Race"} description={"TV Show"} views={"5000"} play={"200"} image={"/images/mar.jpg"}/>
+                   </Widget>
+               </GridColumn>
+           </Grid>
+       </ContainerFluid>
     </Dashboard>
 );

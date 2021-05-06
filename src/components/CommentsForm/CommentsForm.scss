@@ -1,0 +1,15 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CommentsForm {
+  position: relative;
+
+  form {
+    width: 100%;
+  }
+
+  .Button {
+    margin-top: 20px;
+  }
+}

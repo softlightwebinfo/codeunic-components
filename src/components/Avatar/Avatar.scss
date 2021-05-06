@@ -13,4 +13,19 @@
       cursor: pointer;
     }
   }
+
+  &--default {
+    background-color: #fff;
+    border-radius: 50%;
+
+    img {
+      width: 40px;
+      padding: 4px;
+      height: 40px;
+    }
+  }
+
+  &--square {
+    border-radius: 10px;
+  }
 }

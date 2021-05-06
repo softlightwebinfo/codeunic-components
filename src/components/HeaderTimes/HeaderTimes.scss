@@ -1,0 +1,26 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.HeaderTimes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #222;
+
+  h3 {
+    margin: 0;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: #222;
+  }
+
+  &__icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  &--padding {
+    padding: $margin-bottom;
+  }
+}

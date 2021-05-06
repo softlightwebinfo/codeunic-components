@@ -28,3 +28,24 @@ export const Default = () => <Menu
         },
     }}
 />;
+export const Component = () => <Menu
+    component={(component, data) => <a href={data.key}>{component}</a>}
+    menu={{
+        index: {
+            label: "Dashboard",
+            icon: <FontAwesomeIcon icon={faHome}/>
+        },
+        classification: {
+            label: "Classification",
+            icon: <FontAwesomeIcon icon={faStar}/>
+        },
+        comments: {
+            label: "Comments",
+            icon: <FontAwesomeIcon icon={faComment}/>
+        },
+        prices: {
+            label: "Prices",
+            icon: <FontAwesomeIcon icon={faTags}/>
+        },
+    }}
+/>;

@@ -1,0 +1,30 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.HeaderItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  flex: 1;
+  border-right: 1px solid rgb(245, 245, 245);
+  position: relative;
+  color: #505357;
+  font-size: 1.37em;
+
+  &--date {
+    color: #5f6368;
+    min-width: 120px;
+    font-weight: 400;
+  }
+
+  &--icon {
+    font-size: 2em;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: #eee;
+  }
+}

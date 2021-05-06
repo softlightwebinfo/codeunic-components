@@ -9,7 +9,7 @@ const Logo: React.FC<LogoProps> = (props) => {
     const bm = new BEM("Logo", {})
     bm.Append(props.className);
     return (
-        <div className={bm.toString()} style={props.style}>
+        <div onClick={props.onClick} className={bm.toString()} style={props.style}>
             {props.image && <Image src={props.image}/>}
             {props.logo && <span>{props.logo}</span>}
         </div>

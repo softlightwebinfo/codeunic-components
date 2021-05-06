@@ -1,0 +1,11 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.WidgetRatedItem {
+  align-items: flex-start;
+
+  .Carousel {
+    margin: 0;
+  }
+}

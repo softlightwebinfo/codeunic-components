@@ -1,0 +1,25 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ChatBlock {
+  margin-bottom: 10px;
+
+  &__sender {
+    font-weight: 500;
+    font-size: 0.8em;
+    color: black;
+
+    small {
+      color: #555;
+      margin-left: 5px;
+      font-weight: 300;
+    }
+  }
+
+  &__message {
+    margin: 0;
+    color: #555;
+    font-size: .8em;
+  }
+}

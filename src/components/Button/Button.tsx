@@ -10,10 +10,12 @@ const Button: React.FC<ButtonProps> = ({children, ...props}) => {
         single: props.single,
         dark: props.dark,
         block: props.block,
+        theme: props.theme,
     });
     bm.Append(props.className);
     return (
         <button
+            type={props.type}
             style={props.style}
             onClick={props.onClick}
             className={bm.toString()}

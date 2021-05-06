@@ -1,0 +1,18 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.WidgetSubscribe {
+  svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 20px;
+    width: 2em !important;
+    height: 2em !important;
+  }
+  .Input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

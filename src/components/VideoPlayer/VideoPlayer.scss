@@ -1,0 +1,39 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.VideoPlayer {
+  position: relative;
+
+  video, img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+
+  &__content {
+    svg {
+      $s: 80px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: $s !important;
+      height: $s !important;
+      opacity: .7;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  &--isStarted {
+
+  }
+}

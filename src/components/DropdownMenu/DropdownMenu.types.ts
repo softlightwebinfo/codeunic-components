@@ -5,5 +5,6 @@ import { ReactNode } from "react";
 export interface DropdownMenuProps extends IProps {
     title: string;
     subTitle?: string;
+    badge?: string;
     footer?: ReactNode;
 }

@@ -1,0 +1,37 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ChatSendMsg {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+
+  .Input {
+    width: 100%;
+    margin-right: 20px;
+
+    input {
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #eee;
+      background: none !important;
+      box-shadow: none;
+      color: black;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+      color: #04796a;
+    }
+  }
+}

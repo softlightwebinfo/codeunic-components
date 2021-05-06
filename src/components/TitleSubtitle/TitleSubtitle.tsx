@@ -5,12 +5,15 @@ import "./TitleSubtitle.scss";
 import { BEM } from "../../libs/BEM";
 
 const TitleSubtitle: React.FC<TitleSubtitleProps> = (props) => {
-    const bm = new BEM("TitleSubtitle", {});
+    const bm = new BEM("TitleSubtitle", {
+        center: props.center,
+    });
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>
             <h2>{props.title}</h2>
             <p>{props.subTitle}</p>
+            {props.children && <div>{props.children}</div>}
         </div>
     );
 }

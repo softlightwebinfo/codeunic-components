@@ -3,13 +3,17 @@ import React from "react";
 import { CardHeaderProps } from "./CardHeader.types";
 import "./CardHeader.scss";
 import { BEM } from "../../libs/BEM";
+import Badge from "../Badge/Badge";
 
 const CardHeader: React.FC<CardHeaderProps> = (props) => {
     const bm = new BEM("CardHeader", {});
     bm.Append(props.className);
     return (
         <header className={bm.toString()}>
-            <h5>{props.title}</h5>
+            <h5>
+                {props.title}
+                {props.badge && <Badge theme={"dark"} label={props.badge}/>}
+            </h5>
             <span>{props.subTitle}</span>
         </header>
     );

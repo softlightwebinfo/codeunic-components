@@ -1,0 +1,15 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.AlertCircleIcon {
+  $sz: 13px;
+  position: absolute;
+  background-color: #04796a;
+  width: $sz;
+  height: $sz;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  top: 10px;
+  right: 20px;
+}

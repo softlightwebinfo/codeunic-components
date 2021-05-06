@@ -8,10 +8,14 @@
   justify-content: space-between;
   align-items: center;
   display: flex;
-
+  width: 100%;
   h4 {
     color: var(--iq-white);
     font-size: 1.667em;
+  }
+
+  > div {
+    margin-left: auto;
   }
 
   .Button {

@@ -4,4 +4,31 @@
 
 .List {
   list-style: none;
+
+  &--separator {
+    li + li {
+      padding-left: 20px;
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #2f80ed;
+        left: -2px;
+        top: 50%;
+        margin-top: -3px;
+      }
+    }
+
+    li {
+      position: relative;
+    }
+  }
+
+  &--horizontal {
+    display: flex;
+    gap: 20px;
+  }
 }

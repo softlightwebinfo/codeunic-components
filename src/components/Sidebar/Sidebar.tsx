@@ -13,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
     return (
         <div className={bm.toString()} style={props.style}>
             <div className={bm.Children("logo")}>
-                <Logo image={props.image} logo={props.logo}/>
+                <Logo onClick={props.onClickLogo} image={props.image} logo={props.logo}/>
                 <FontAwesomeIcon icon={faBars}/>
             </div>
             {props.children && (<div>{props.children}</div>)}

@@ -3,4 +3,5 @@ import { IProps } from "../../interfaces/IProps";
 
 export interface GridColumnProps extends IProps {
     gridColumn?: string;
+    gridRow?: string;
 }

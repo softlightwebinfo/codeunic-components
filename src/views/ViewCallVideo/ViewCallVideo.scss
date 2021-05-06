@@ -1,0 +1,23 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ViewCallVideo {
+  &__video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  &__messenger {
+    padding-bottom: 90px;
+  }
+
+  &__info {
+    margin: 40px;
+  }
+}

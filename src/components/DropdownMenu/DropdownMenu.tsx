@@ -15,7 +15,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = (props) => {
     bm.Append(props.className);
     return (
         <Card className={bm.toString()} style={props.style}>
-            <CardHeader title={props.title} subTitle={props.subTitle}/>
+            <CardHeader badge={props.badge} title={props.title} subTitle={props.subTitle}/>
             <CardContent>{props.children}</CardContent>
             <CardFooter>{props.footer}</CardFooter>
         </Card>

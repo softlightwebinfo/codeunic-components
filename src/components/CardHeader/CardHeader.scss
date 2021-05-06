@@ -11,6 +11,9 @@
   h5 {
     font-size: 1.2em;
     color: var(--iq-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   span {

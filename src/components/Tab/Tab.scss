@@ -1,0 +1,29 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+
+.Tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #555;
+  padding: 10px;
+
+  &__icon {
+
+  }
+
+  &__title {
+    margin-left: 10px;
+  }
+
+  &--active {
+    border-bottom: 2px solid #04796a;
+    color: #04796a;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(0, 121, 107, .039);
+  }
+}

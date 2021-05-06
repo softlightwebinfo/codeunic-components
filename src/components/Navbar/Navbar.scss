@@ -40,4 +40,12 @@
     display: flex;
     align-items: center;
   }
+
+  &__center {
+    flex: 1;
+  }
+
+  &--default {
+    width: 100%;
+  }
 }

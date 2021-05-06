@@ -2,6 +2,7 @@
 import { IProps } from "../../interfaces/IProps";
 
 export interface TitleSubtitleProps extends IProps {
+    center?: boolean;
     title: string;
     subTitle: string;
 }

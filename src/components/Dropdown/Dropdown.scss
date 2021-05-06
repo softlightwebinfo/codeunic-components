@@ -5,6 +5,12 @@
 .Dropdown {
   position: relative;
 
+  &__trigger {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   &__menu {
     width: 300px;
     display: none;

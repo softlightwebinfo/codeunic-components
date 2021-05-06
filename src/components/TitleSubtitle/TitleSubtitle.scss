@@ -3,5 +3,11 @@
 @import "../../sass/typography.scss";
 
 .TitleSubtitle {
+  &--center {
+    text-align: center;
+  }
 
+  > div {
+    margin-top: 10px;
+  }
 }

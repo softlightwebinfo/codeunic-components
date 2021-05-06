@@ -1,8 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { BadgeProps } from "./Badge.types";
-
 import "./Badge.scss";
 import { BEM } from "../../libs/BEM";
 
@@ -12,6 +10,7 @@ const Badge: React.FC<BadgeProps> = (props) => {
         [props.theme]: !!props.theme,
         radius: radius,
         "no-radius": !radius,
+        clip: props.clip,
     });
     bm.Append(props.className);
     return (

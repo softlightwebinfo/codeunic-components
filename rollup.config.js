@@ -8,38 +8,55 @@ import copy from "rollup-plugin-copy";
 const packageJson = require("./package.json");
 
 export default {
-  input: "src/index.ts",
-  output: [
-    {
-      file: packageJson.main,
-      format: "cjs",
-      sourcemap: true
-    },
-    {
-      file: packageJson.module,
-      format: "esm",
-      sourcemap: true
-    }
-  ],
-  plugins: [
-    peerDepsExternal(),
-    resolve(),
-    commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
-    postcss(),
-    copy({
-      targets: [
+    input: "src/index.ts",
+    output: [
         {
-          src: "src/variables.scss",
-          dest: "build",
-          rename: "variables.scss"
+            file: packageJson.main,
+            format: "cjs",
+            sourcemap: true,
+            inlineDynamicImports: true
         },
         {
-          src: "src/typography.scss",
-          dest: "build",
-          rename: "typography.scss"
+            file: packageJson.module,
+            format: "esm",
+            sourcemap: true,
+            inlineDynamicImports: true
         }
-      ]
-    })
-  ]
+    ],
+    plugins: [
+        peerDepsExternal(),
+        resolve(),
+        commonjs(),
+        typescript({useTsconfigDeclarationDir: true}),
+        postcss(),
+        copy({
+            targets: [
+                {
+                    src: "src/sass/variables.scss",
+                    dest: "build",
+                    rename: "variables.scss"
+                },
+                {
+                    src: "src/sass/typography.scss",
+                    dest: "build",
+                    rename: "typography.scss"
+                },
+                {
+                    src: "src/sass/placeholder.scss",
+                    dest: "build",
+                    rename: "placeholder.scss"
+                },
+                {
+                    src: "src/sass/mixin.scss",
+                    dest: "build",
+                    rename: "mixin.scss"
+                },
+                {
+                    src: "src/sass/animation.scss",
+                    dest: "build",
+                    rename: "animation.scss"
+                },
+            ]
+        })
+    ]
 };

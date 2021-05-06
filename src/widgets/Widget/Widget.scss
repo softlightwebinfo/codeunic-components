@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Widget {
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(47, 128, 237, 0.1);
+  background-color: #131720;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}

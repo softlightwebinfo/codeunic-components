@@ -1,3 +1,5 @@
+@import "./variables";
+
 @mixin transition($attr...) {
   transition: $attr;
   -webkit-transition: $attr;
@@ -5,8 +7,8 @@
   -o-transition: $attr;
 }
 
-@mixin backgroundColor($hover: true) {
-  &--primary {
+@mixin backgroundColor($hover: true, $dash: '--') {
+  &#{$dash}primary {
     color: #fff;
     background-color: var(--iq-primary);
 
@@ -17,13 +19,23 @@
     }
   }
 
-  &--secondary {
+  &#{$dash}secondary {
     color: #fff;
     background-color: var(--iq-secondary);
 
     @if ($hover) {
       &:hover {
         background-color: var(--iq-secondary-hover);
+      }
+    }
+  }
+
+  &#{$dash}dark {
+    color: #fff;
+    background-color: $harvey-black;
+    @if ($hover) {
+      &:hover {
+        background-color: #2f80ed;
       }
     }
   }
@@ -74,5 +86,36 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 75%, rgba(0, 0, 0, 0.9) 100%);
     opacity: 0.65;
     transition: 0.5s;
+  }
+}
+
+@mixin ImageCoverTwo {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(19, 23, 32, 0.5) 0%, #131720 100%);
+    pointer-events: none;
+  }
+}
+
+@mixin Input {
+  background-color: $harvey-black;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  height: 44px;
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  padding: 0 20px;
+  &:focus {
+    background-color: $harvey-black;
+    border-color: #2f80ed;
   }
 }

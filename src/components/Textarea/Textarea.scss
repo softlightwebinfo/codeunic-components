@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../sass/mixin.scss";
+
+.Textarea {
+  position: relative;
+  width: 100%;
+
+  textarea {
+    @include Input;
+    min-height: 150px;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
