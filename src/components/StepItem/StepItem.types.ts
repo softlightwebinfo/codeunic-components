@@ -1,6 +1,6 @@
 // Generated with util/create-component.js
 import { IProps } from "../../interfaces/IProps";
 
-export interface FormGroupProps extends IProps {
-    default?: boolean;
+export interface StepItemProps extends IProps {
+    inset?: boolean;
 }

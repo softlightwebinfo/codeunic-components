@@ -4,9 +4,9 @@ import { ReactNode } from "react";
 
 export interface WidgetStatProps extends IProps {
     text: string;
-    textSecondary: number;
-    color: string;
+    textSecondary?: number;
     title: string;
-    icon: ReactNode | string;
-    isUp: boolean;
+    color?: string;
+    icon?: ReactNode | string;
+    isUp?: boolean;
 }

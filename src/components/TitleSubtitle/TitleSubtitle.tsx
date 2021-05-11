@@ -12,7 +12,11 @@ const TitleSubtitle: React.FC<TitleSubtitleProps> = (props) => {
     return (
         <div className={bm.toString()} style={props.style}>
             <h2>{props.title}</h2>
-            <p>{props.subTitle}</p>
+            <p>
+                {props.subTitle.split("\n").map((item, index) => (
+                    <div key={index}>{item}</div>
+                ))}
+            </p>
             {props.children && <div>{props.children}</div>}
         </div>
     );

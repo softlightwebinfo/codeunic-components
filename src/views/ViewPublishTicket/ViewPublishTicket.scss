@@ -1,0 +1,13 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ViewPublishTicket {
+  &__form {
+    max-width: 30em;
+    margin: 40px auto auto;
+  }
+  .Input {
+    color: white!important;
+  }
+}

@@ -9,11 +9,14 @@ const Avatar: React.FC<AvatarProps> = (props) => {
     const bm = new BEM("Avatar", {
         square: props.square,
         default: props.default,
+        noImage: props.noImage,
     });
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>
-            <Image src={props.image}/>
+            {props.noImage ? (props.image) : (
+                <Image src={props.image.toString()}/>
+            )}
         </div>
     );
 }

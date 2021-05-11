@@ -1,0 +1,44 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.InputFile {
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__content {
+    width: 100%;
+    color: #aeaeb7;
+    border-color: #797878;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: dashed;
+
+    input, textarea {
+      display: none;
+
+      &,
+      &:hover,
+      &:active,
+      &:focus {
+        background: none;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+      }
+    }
+
+    svg {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+}

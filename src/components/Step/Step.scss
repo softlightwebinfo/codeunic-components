@@ -1,0 +1,54 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Step {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  &__content {
+    display: flex;
+    @media (min-width: 768px) {
+      padding-left: 2rem;
+    }
+  }
+
+  &__badge {
+    $sz: 1.5rem;
+    font-weight: 500;
+    z-index: 10;
+    flex-shrink: 0;
+    display: inline-flex;
+    line-height: 1;
+    font-size: .875rem;
+    position: absolute;
+    left: -($sz / 2);
+
+    .Badge {
+      background-color: rgba(246, 105, 70, 1);
+      width: $sz;
+      height: $sz;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 640px) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 640px) {
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    width: 66.666667%;
+  }
+}

@@ -3,20 +3,21 @@ import React from "react";
 import { InputProps } from "./Input.types";
 import "./Input.scss";
 import { BEM } from "../../libs/BEM";
+import FormLabel from "../FormLabel/FormLabel";
 
 const Input: React.FC<InputProps> = (props) => {
     const {type = "text"} = props;
     const bm = new BEM("Input", {});
     bm.Append(props.className);
     return (
-        <label className={bm.toString()} style={props.style}>
+        <FormLabel label={props.label} help={props.help} className={bm.toString()} style={props.style}>
             <input
                 type={type}
                 value={props.value}
                 placeholder={props.placeholder}
                 onChange={props.onChange}
             />
-        </label>
+        </FormLabel>
     );
 }
 

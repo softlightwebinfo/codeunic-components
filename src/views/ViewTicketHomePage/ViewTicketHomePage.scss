@@ -1,0 +1,32 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ViewTicketHomePage {
+  &__title {
+    text-align: center;
+    margin: 80px;
+
+    .Button {
+      margin-top: 40px;
+      background-color: $orange;
+      border-radius: 10px;
+      padding: 15px 40px;
+    }
+  }
+
+  > video {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__steps {
+    margin-top: 40px;
+    &-title{
+      margin-bottom: 40px;
+    }
+  }
+}

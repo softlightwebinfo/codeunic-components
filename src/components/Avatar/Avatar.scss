@@ -3,8 +3,9 @@
 @import "../../sass/typography.scss";
 
 .Avatar {
+  $w: 50px;
+
   img {
-    $w: 50px;
     width: $w;
     height: $w;
     object-fit: cover;
@@ -27,5 +28,14 @@
 
   &--square {
     border-radius: 10px;
+  }
+
+  &--noImage {
+    $w: $w - 10px;
+    width: $w;
+    height: $w;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

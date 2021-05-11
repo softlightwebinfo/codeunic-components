@@ -12,7 +12,7 @@ const AvatarHeader: React.FC<AvatarHeaderProps> = (props) => {
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>
-            <Avatar square image={props.avatar} default/>
+            <Avatar noImage={props.noImage} square image={props.avatar} default/>
             <span>{props.title}</span>
             {props.subTitle && <span>{props.subTitle}</span>}
         </div>

@@ -19,10 +19,12 @@ const WidgetStat: React.FC<WidgetStatProps> = (props) => {
             </header>
             <div>
                 <h4>{props.title}</h4>
-                <span>
-                    <FontAwesomeIcon icon={props.isUp ? faCaretUp : faCaretDown}/>
-                    {props.textSecondary}
-                </span>
+                {props.textSecondary && (
+                    <span>
+                        <FontAwesomeIcon icon={props.isUp ? faCaretUp : faCaretDown}/>
+                        {props.textSecondary}
+                    </span>
+                )}
             </div>
         </Widget>
     );

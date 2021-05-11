@@ -3,4 +3,8 @@
 
 .FormGroup {
   margin-bottom: $separator;
+
+  &--default {
+    margin-bottom: 30px;
+  }
 }

@@ -72,6 +72,8 @@ import SlickItem from './SlickItem/SlickItem';
 import SlickList from './SlickList/SlickList';
 import SlickVideoItem from './SlickVideoItem/SlickVideoItem';
 import SocialIcons from './SocialIcons/SocialIcons';
+import Step from './Step/Step';
+import StepItem from './StepItem/StepItem';
 import SubCard from './SubCard/SubCard';
 import Tab from './Tab/Tab';
 import TablePrice from './TablePrice/TablePrice';
@@ -162,6 +164,8 @@ export {
 	SlickList,
 	SlickVideoItem,
 	SocialIcons,
+	Step,
+	StepItem,
 	SubCard,
 	Tab,
 	TablePrice,

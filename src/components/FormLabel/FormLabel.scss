@@ -1,0 +1,19 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.FormLabel {
+  > p {
+    color: var(--iq-white);
+
+    &:first-child {
+      margin-bottom: $separator
+    }
+
+    &:last-child {
+      margin-top: $separator;
+      font-size: .7em;
+      color: var(--iq-body-text);
+    }
+  }
+}

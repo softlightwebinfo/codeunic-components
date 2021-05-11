@@ -22,8 +22,10 @@
   }
 
   .Round {
-    height: 35px;
-    width: 35px;
+    $size: 35px;
+    height: #{$size};
+    width: #{$size};
     font-size: 16px;
+    flex: 0 0 #{$size};
   }
 }

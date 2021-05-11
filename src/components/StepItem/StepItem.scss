@@ -1,0 +1,24 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.StepItem {
+  display: flex;
+  height: 100%;
+  width: 1.5rem;
+
+  &__inside {
+    background-color: #3c3c44;
+    height: 100%;
+    width: .25rem;
+    pointer-events: none;
+  }
+
+  &--inset {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+  }
+}

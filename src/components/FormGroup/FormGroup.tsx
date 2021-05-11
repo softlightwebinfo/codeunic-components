@@ -5,7 +5,9 @@ import "./FormGroup.scss";
 import { BEM } from "../../libs/BEM";
 
 const FormGroup: React.FC<FormGroupProps> = (props) => {
-    const bm = new BEM("FormGroup", {});
+    const bm = new BEM("FormGroup", {
+        default: props.default,
+    });
     bm.Append(props.className)
     return (
         <div
