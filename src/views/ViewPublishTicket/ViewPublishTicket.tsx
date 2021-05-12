@@ -10,6 +10,9 @@ import Input from "../../components/Input/Input";
 import Textarea from "../../components/Textarea/Textarea";
 import InputFile from "../../components/InputFile/InputFile";
 import Grid from "../../components/Grid/Grid";
+import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTicketAlt } from "@fortawesome/free-solid-svg-icons";
 
 const ViewPublishTicket: React.FC<ViewPublishTicketProps> = (props) => {
     const bm = new BEM("ViewPublishTicket", {});
@@ -39,7 +42,7 @@ const ViewPublishTicket: React.FC<ViewPublishTicketProps> = (props) => {
                             subPlaceholder={"PNG, JPG, hasta 2MB"}
                         />
                     </FormGroup>
-                    <FormGroup>
+                    <FormGroup default>
                         <Grid col={3}>
                             <Input
                                 label={"Fecha"}
@@ -54,6 +57,27 @@ const ViewPublishTicket: React.FC<ViewPublishTicketProps> = (props) => {
                             />
                         </Grid>
                     </FormGroup>
+                    <FormGroup
+                        helpColor={"red"}
+                        default
+                        help={"Haga click aqui para obtener opciones de emisión de boletos más avandadas."}
+                    >
+                        <Grid col={2}>
+                            <Input
+                                label={"Asientos máximos"}
+                                type={"number"}
+                                placeholder={"Limitado"}
+                            />
+                            <Input
+                                label={"Precio del asiento"}
+                                type={"number"}
+                            />
+                        </Grid>
+                    </FormGroup>
+                    <ButtonDefault block>
+                        <FontAwesomeIcon icon={faTicketAlt}/>
+                        Create My Event
+                    </ButtonDefault>
                 </form>
             </Container>
         </div>

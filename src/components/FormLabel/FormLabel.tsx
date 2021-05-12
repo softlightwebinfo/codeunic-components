@@ -8,12 +8,21 @@ import TextInfo from "../TextInfo/TextInfo";
 const FormLabel: React.FC<FormLabelProps> = (props) => {
     const bm = new BEM("FormLabel", {});
     bm.Append(props.className);
+    const Component: any = props.component ?? "label";
     return (
-        <label className={bm.toString()} style={props.style}>
+        <Component className={bm.toString()} style={props.style}>
             {props.label && <TextInfo message={props.label}/>}
             {props.children}
-            {props.help && <TextInfo message={props.help}/>}
-        </label>
+            {props.help && (
+                <TextInfo
+                    onClick={props.helpOnClick}
+                    style={{
+                        color: props.helpColor,
+                    }}
+                    message={props.help}
+                />
+            )}
+        </Component>
     );
 }
 

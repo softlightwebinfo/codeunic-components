@@ -37,6 +37,7 @@ import Flyout from './Flyout/Flyout';
 import Footer from './Footer/Footer';
 import FooterCopyright from './FooterCopyright/FooterCopyright';
 import FormGroup from './FormGroup/FormGroup';
+import FormLabel from './FormLabel/FormLabel';
 import Grid from './Grid/Grid';
 import GridColumn from './GridColumn/GridColumn';
 import HeaderItems from './HeaderItems/HeaderItems';
@@ -45,6 +46,7 @@ import Hr from './Hr/Hr';
 import IconBlock from './IconBlock/IconBlock';
 import Image from './Image/Image';
 import Input from './Input/Input';
+import InputFile from './InputFile/InputFile';
 import InputGroup from './InputGroup/InputGroup';
 import List from './List/List';
 import ListData from './ListData/ListData';
@@ -129,6 +131,7 @@ export {
 	Footer,
 	FooterCopyright,
 	FormGroup,
+	FormLabel,
 	Grid,
 	GridColumn,
 	HeaderItems,
@@ -137,6 +140,7 @@ export {
 	IconBlock,
 	Image,
 	Input,
+	InputFile,
 	InputGroup,
 	List,
 	ListData,
