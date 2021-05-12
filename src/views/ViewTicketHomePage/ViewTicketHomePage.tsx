@@ -18,7 +18,7 @@ const ViewTicketHomePage: React.FC<ViewTicketHomePageProps> = (props) => {
         <div className={bm.toString()} style={props.style}>
             <div className={bm.Children("title")}>
                 <TitleSubtitle center {...props.title}/>
-                <ButtonDefault {...props.button}/>
+                <ButtonDefault className={bm.Children("button")} {...props.button}/>
             </div>
             <video src={props.video} autoPlay muted loop playsInline/>
             <div className={bm.Children("steps")}>

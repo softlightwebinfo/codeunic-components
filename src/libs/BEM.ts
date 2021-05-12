@@ -16,21 +16,27 @@ export class BEM {
     constructor(parent: string, classNames: IObjectMix, style = null) {
         this._parent = parent;
         this._classNames = classNames;
-        this._listClassNames.push(!style ? parent : style[parent])
         this.style = style;
+        this._listClassNames.push(this.getParentStyle())
     }
 
     public GetParent(): string {
         return this._parent;
     }
 
+    public getParentStyle() {
+        return this.style ? this.style[this._parent] : this._parent;
+    }
+
     toString(): string {
         return Object.entries(this._classNames).reduce((previousValue, currentValue) => {
             if (currentValue[1]) {
                 if (typeof currentValue[1] == "string") {
-                    previousValue.push(this._parent + ITBem.MODIFIER + currentValue[0] + ITBem.DEFAULT + currentValue[1]);
+                    const parent = this._parent + ITBem.MODIFIER + currentValue[0] + ITBem.DEFAULT + currentValue[1];
+                    previousValue.push(this.style ? this.style[parent] : parent);
                 } else if (typeof currentValue[1] == "boolean") {
-                    previousValue.push(this._parent + ITBem.MODIFIER + currentValue[0]);
+                    const parent = this._parent + ITBem.MODIFIER + currentValue[0];
+                    previousValue.push(this.style ? this.style[parent] : parent);
                 }
             }
             return previousValue;
@@ -44,7 +50,8 @@ export class BEM {
     }
 
     Children(name: string, extra: string = ""): string {
-        return `${this._parent}__${name}${extra ? ` ${extra}` : ''}`;
+        const parent = `${this._parent}__${name}${extra ? ` ${extra}` : ''}`;
+        return this.style ? this.style[parent] : parent;
     }
 
     Modifier(children: string, modifier: string, active: boolean, extra: string = "") {

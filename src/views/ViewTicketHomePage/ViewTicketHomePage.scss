@@ -6,13 +6,13 @@
   &__title {
     text-align: center;
     margin: 80px;
+  }
 
-    .Button {
-      margin-top: 40px;
-      background-color: $orange;
-      border-radius: 10px;
-      padding: 15px 40px;
-    }
+  &__button {
+    margin-top: 40px;
+    background-color: $orange;
+    border-radius: 10px;
+    padding: 15px 40px;
   }
 
   > video {
@@ -25,7 +25,8 @@
 
   &__steps {
     margin-top: 40px;
-    &-title{
+
+    &-title {
       margin-bottom: 40px;
     }
   }
