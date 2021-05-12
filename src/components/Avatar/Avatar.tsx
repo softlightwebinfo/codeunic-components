@@ -2,7 +2,7 @@
 import React from "react";
 import { AvatarProps } from "./Avatar.types";
 import Image from "../Image/Image";
-import "./Avatar.scss";
+import style from "./Avatar.scss";
 import { BEM } from "../../libs/BEM";
 
 const Avatar: React.FC<AvatarProps> = (props) => {
@@ -10,7 +10,7 @@ const Avatar: React.FC<AvatarProps> = (props) => {
         square: props.square,
         default: props.default,
         noImage: props.noImage,
-    });
+    }, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

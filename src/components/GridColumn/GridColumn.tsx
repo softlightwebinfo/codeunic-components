@@ -3,11 +3,11 @@ import React from "react";
 
 import { GridColumnProps } from "./GridColumn.types";
 
-import "./GridColumn.scss";
+import style from "./GridColumn.scss";
 import { BEM } from "../../libs/BEM";
 
 const GridColumn: React.FC<GridColumnProps> = (props) => {
-    const bm = new BEM("GridColumn", {});
+    const bm = new BEM("GridColumn", {}, style);
     bm.Append(props.className);
     return (
         <div

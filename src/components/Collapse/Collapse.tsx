@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { CollapseProps } from "./Collapse.types";
-import "./Collapse.scss";
+import style from "./Collapse.scss";
 import { BEM } from "../../libs/BEM";
 import ButtonDefault from "../ButtonDefault/ButtonDefault";
 
 const Collapse: React.FC<CollapseProps> = (props) => {
     const [state, setState] = useState(false);
-    const bm = new BEM("Collapse", {});
+    const bm = new BEM("Collapse", {}, style);
     bm.Append(props.className);
 
     const onClick = (evt) => {

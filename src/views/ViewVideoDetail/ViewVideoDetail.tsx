@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React, { Fragment } from "react";
 import { ViewVideoDetailProps } from "./ViewVideoDetail.types";
-import "./ViewVideoDetail.scss";
+import style from "./ViewVideoDetail.scss";
 import { BEM } from "../../libs/BEM";
 import TitleActions from "../../components/TitleActions/TitleActions";
 import { Carousel, Container, Grid, GridColumn, Section, VideoPlayer } from "../../components";
@@ -13,7 +13,7 @@ import { WidgetSubscribe } from "../../widgets";
 import CommentsForm from "../../components/CommentsForm/CommentsForm";
 
 const ViewVideoDetail: React.FC<ViewVideoDetailProps> = (props) => {
-    const bm = new BEM("ViewVideoDetail", {});
+    const bm = new BEM("ViewVideoDetail", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CommentProps } from "./Comment.types";
-import "./Comment.scss";
+import style from "./Comment.scss";
 import { BEM } from "../../libs/BEM";
 import AvatarHeader from "../AvatarHeader/AvatarHeader";
 import Button from "../Button/Button";
@@ -13,7 +13,7 @@ const Comment: React.FC<CommentProps> = (props) => {
     const bm = new BEM("Comment", {
         isQuote: props.isQuote,
         isAnswer: props.isAnswer,
-    });
+    }, style);
     bm.Append(props.className);
     return (
         <article className={bm.toString()}>

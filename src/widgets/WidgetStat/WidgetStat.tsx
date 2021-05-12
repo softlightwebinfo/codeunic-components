@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { WidgetStatProps } from "./WidgetStat.types";
-import "./WidgetStat.scss";
+import style from "./WidgetStat.scss";
 import { BEM } from "../../libs/BEM";
 import Widget from "../Widget/Widget";
 import Round from "../../components/Round/Round";
@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 const WidgetStat: React.FC<WidgetStatProps> = (props) => {
-    const bm = new BEM("WidgetStat", {});
+    const bm = new BEM("WidgetStat", {}, style);
     bm.Children(props.className)
     return (
         <Widget className={bm.toString()} style={props.style}>

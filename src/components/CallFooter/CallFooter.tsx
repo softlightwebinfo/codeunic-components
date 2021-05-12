@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CallFooterProps } from "./CallFooter.types";
-import "./CallFooter.scss";
+import style from "./CallFooter.scss";
 import { BEM } from "../../libs/BEM";
 import {
     faAngleUp,
@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconBlock from "../IconBlock/IconBlock";
 
 const CallFooter: React.FC<CallFooterProps> = (props) => {
-    const bm = new BEM("CallFooter", {});
+    const bm = new BEM("CallFooter", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

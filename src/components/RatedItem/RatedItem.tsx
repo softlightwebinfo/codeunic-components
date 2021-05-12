@@ -1,14 +1,14 @@
 // Generated with util/create-component.js
 import React from "react";
 import { RatedItemProps } from "./RatedItem.types";
-import "./RatedItem.scss";
+import style from "./RatedItem.scss";
 import { BEM } from "../../libs/BEM";
 import Card from "../Card/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const RatedItem: React.FC<RatedItemProps> = (props) => {
-    const bm = new BEM("RatedItem", {});
+    const bm = new BEM("RatedItem", {}, style);
     bm.Children(props.className);
     return (
         <Card default className={bm.toString()} style={props.style} image={props.image}>

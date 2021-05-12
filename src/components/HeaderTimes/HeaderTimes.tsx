@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { HeaderTimesProps } from "./HeaderTimes.types";
-import "./HeaderTimes.scss";
+import style from "./HeaderTimes.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { BEM } from "../../libs/BEM";
@@ -9,7 +9,7 @@ import { BEM } from "../../libs/BEM";
 const HeaderTimes: React.FC<HeaderTimesProps> = (props) => {
     const bm = new BEM("HeaderTimes", {
         padding: props.padding,
-    });
+    }, style);
     bm.Append(props.className)
     return (
         <header className={bm.toString()} style={props.style}>

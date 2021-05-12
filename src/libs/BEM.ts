@@ -11,11 +11,13 @@ export class BEM {
     private _parent: string;
     private _classNames: IObjectMix;
     private _listClassNames: string[] = [];
+    private style: object;
 
-    constructor(parent: string, classNames: IObjectMix) {
+    constructor(parent: string, classNames: IObjectMix, style = null) {
         this._parent = parent;
         this._classNames = classNames;
-        this._listClassNames.push(parent)
+        this._listClassNames.push(!style ? parent : style[parent])
+        this.style = style;
     }
 
     public GetParent(): string {

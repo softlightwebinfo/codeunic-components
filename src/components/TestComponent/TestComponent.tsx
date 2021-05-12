@@ -2,7 +2,7 @@ import React from "react";
 
 import { TestComponentProps } from "./TestComponent.types";
 
-import "./TestComponent.scss";
+import style from "./TestComponent.scss";
 
 const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
   <div

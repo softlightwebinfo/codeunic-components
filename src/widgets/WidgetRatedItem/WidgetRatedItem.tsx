@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React, { createRef } from "react";
 import { WidgetRatedItemProps } from "./WidgetRatedItem.types";
-import "./WidgetRatedItem.scss";
+import style from "./WidgetRatedItem.scss";
 import Widget from "../Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import TitleCategory from "../../components/TitleCategory/TitleCategory";
@@ -12,7 +12,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WidgetRatedItem: React.FC<WidgetRatedItemProps> = (props) => {
-    const bm = new BEM("WidgetRatedItem", {});
+    const bm = new BEM("WidgetRatedItem", {}, style);
     bm.Append(props.className);
     let reference: any = createRef();
     return (

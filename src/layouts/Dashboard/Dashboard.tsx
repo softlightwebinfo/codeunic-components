@@ -3,14 +3,14 @@ import React from "react";
 
 import { DashboardProps } from "./Dashboard.types";
 
-import "./Dashboard.scss";
+import style from "./Dashboard.scss";
 import { BEM } from "../../libs/BEM";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
 import Menu from "../../components/Menu/Menu";
 
 const Dashboard: React.FC<DashboardProps> = (props) => {
-    const bm = new BEM("Dashboard", {});
+    const bm = new BEM("Dashboard", {}, style);
     return (
         <div style={props.style} className={bm.toString()}>
             <Sidebar {...props.sidebar}>

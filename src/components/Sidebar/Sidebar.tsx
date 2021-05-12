@@ -1,14 +1,14 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SidebarProps } from "./Sidebar.types";
-import "./Sidebar.scss";
+import style from "./Sidebar.scss";
 import { BEM } from "../../libs/BEM";
 import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar: React.FC<SidebarProps> = (props) => {
-    const bm = new BEM("Sidebar", {});
+    const bm = new BEM("Sidebar", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

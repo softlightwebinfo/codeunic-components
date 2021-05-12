@@ -2,14 +2,14 @@
 import React, { useState } from "react";
 import { VideoPlayerProps } from "./VideoPlayer.types";
 import { BEM } from "../../libs/BEM";
-import "./VideoPlayer.scss";
+import style from "./VideoPlayer.scss";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import VideoHls from "../VideoHls/VideoHls";
 
 const VideoPlayer: React.FC<VideoPlayerProps> = (props) => {
     const [isStarted, setIsStarted] = useState(false);
-    const bm = new BEM("VideoPlayer", {isStarted});
+    const bm = new BEM("VideoPlayer", {isStarted}, style);
     bm.Append(props.className);
 
     return (

@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TabProps } from "./Tab.types";
-import "./Tab.scss";
+import style from "./Tab.scss";
 import { BEM } from "../../libs/BEM";
 
 const Tab: React.FC<TabProps> = (props) => {
     const bm = new BEM("Tab", {
         active: props.active,
-    });
+    }, style);
     bm.Append(props.className);
     return (
         <div onClick={props.onClick} className={bm.toString()} style={props.style}>

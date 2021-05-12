@@ -3,11 +3,11 @@ import React from "react";
 
 import { ArrowProps } from "./Arrow.types";
 
-import "./Arrow.scss";
+import style from "./Arrow.scss";
 import { BEM } from "../../libs/BEM";
 
 const Arrow: React.FC<ArrowProps> = (props) => {
-    const bm = new BEM("Arrow", {})
+    const bm = new BEM("Arrow", {}, style)
     bm.Append(props.className);
     return (
         <i style={props.style} className={bm.toString()}/>

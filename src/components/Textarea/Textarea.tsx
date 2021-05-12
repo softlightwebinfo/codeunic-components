@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TextareaProps } from "./Textarea.types";
-import "./Textarea.scss";
+import style from "./Textarea.scss";
 import { BEM } from "../../libs/BEM";
 import FormLabel from "../FormLabel/FormLabel";
 
 const Textarea: React.FC<TextareaProps> = (props) => {
-    const bm = new BEM("Textarea", {});
+    const bm = new BEM("Textarea", {}, style);
     bm.Append(props.className);
     return (
         <FormLabel help={props.help} label={props.label} className={bm.toString()} style={props.style}>

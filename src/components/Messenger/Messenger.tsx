@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { MessengerProps } from "./Messenger.types";
-import "./Messenger.scss";
+import style from "./Messenger.scss";
 import { BEM } from "../../libs/BEM";
 import HeaderTimes from "../HeaderTimes/HeaderTimes";
 import Flyout from "../Flyout/Flyout";
@@ -12,7 +12,7 @@ import ChatSendMsg from "../ChatSendMsg/ChatSendMsg";
 import ChatSection from "../ChatSection/ChatSection";
 
 const Messenger: React.FC<MessengerProps> = (props) => {
-    const bm = new BEM("Messenger", {});
+    const bm = new BEM("Messenger", {}, style);
     bm.Append(props.className)
     return (
         <Flyout onClose={props.onClose} className={bm.toString()} style={props.style}>

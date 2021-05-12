@@ -1,11 +1,11 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CardTitleProps } from "./CardTitle.types";
-import "./CardTitle.scss";
+import style from "./CardTitle.scss";
 import { BEM } from "../../libs/BEM";
 
 const CardTitle: React.FC<CardTitleProps> = (props) => {
-    const bm = new BEM("CardTitle", {});
+    const bm = new BEM("CardTitle", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { IconBlockProps } from "./IconBlock.types";
-import "./IconBlock.scss";
+import style from "./IconBlock.scss";
 import { BEM } from "../../libs/BEM";
 
 const IconBlock: React.FC<IconBlockProps> = (props) => {
@@ -9,7 +9,7 @@ const IconBlock: React.FC<IconBlockProps> = (props) => {
         icon: !props.title && !props.isTitle,
         red: props.red,
         isTitle: props.isTitle
-    });
+    }, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

@@ -1,11 +1,11 @@
 // Generated with util/create-component.js
 import React from "react";
 import { InputGroupProps } from "./InputGroup.types";
-import "./InputGroup.scss";
+import style from "./InputGroup.scss";
 import { BEM } from "../../libs/BEM";
 
 const InputGroup: React.FC<InputGroupProps> = (props) => {
-    const bm = new BEM("InputGroup", {});
+    const bm = new BEM("InputGroup", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

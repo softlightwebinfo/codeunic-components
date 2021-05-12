@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
 import React from "react";
 import { FormLabelProps } from "./FormLabel.types";
-import "./FormLabel.scss";
+import style from "./FormLabel.scss";
 import { BEM } from "../../libs/BEM";
 import TextInfo from "../TextInfo/TextInfo";
 
 const FormLabel: React.FC<FormLabelProps> = (props) => {
-    const bm = new BEM("FormLabel", {});
+    const bm = new BEM("FormLabel", {}, style);
     bm.Append(props.className);
     const Component: any = props.component ?? "label";
     return (

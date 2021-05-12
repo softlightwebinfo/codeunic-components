@@ -1,14 +1,14 @@
 // Generated with util/create-component.js
 import React from "react";
 import { FormGroupProps } from "./FormGroup.types";
-import "./FormGroup.scss";
+import style from "./FormGroup.scss";
 import { BEM } from "../../libs/BEM";
 import FormLabel from "../FormLabel/FormLabel";
 
 const FormGroup: React.FC<FormGroupProps> = (props) => {
     const bm = new BEM("FormGroup", {
         default: props.default,
-    });
+    }, style);
     bm.Append(props.className)
     return (
         <FormLabel

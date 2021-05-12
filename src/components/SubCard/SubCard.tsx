@@ -1,14 +1,14 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SubCardProps } from "./SubCard.types";
-import "./SubCard.scss";
+import style from "./SubCard.scss";
 import { BEM } from "../../libs/BEM";
 import CardIcon from "../CardIcon/CardIcon";
 import Card from "../Card/Card";
 import CardTitle from "../CardTitle/CardTitle";
 
 const SubCard: React.FC<SubCardProps> = (props) => {
-    const bm = new BEM("SubCard", {});
+    const bm = new BEM("SubCard", {}, style);
     bm.Append(props.className);
     return (
         <Card className={bm.toString()} style={props.style}>

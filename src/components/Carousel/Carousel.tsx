@@ -3,14 +3,14 @@ import React, { useImperativeHandle, useState } from "react";
 
 import { CarouselProps } from "./Carousel.types";
 
-import "./Carousel.scss";
+import style from "./Carousel.scss";
 import { BEM } from "../../libs/BEM";
 import SlickList from "../SlickList/SlickList";
 import SlickArrow from "../SlickArrow/SlickArrow";
 
 const Carousel: React.FC<CarouselProps> = React.forwardRef((props, ref: any) => {
     const [active, setActive] = useState(0);
-    const bm = new BEM("Carousel", {});
+    const bm = new BEM("Carousel", {}, style);
     bm.Append(props.className);
 
     const onClick = (pos: number) => () => {

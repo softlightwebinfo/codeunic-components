@@ -1,4 +1,4 @@
-import "./sass/global.scss";
+import style from "./sass/global.scss";
 export * from './components';
 export * from './layouts';
 export * from './views';

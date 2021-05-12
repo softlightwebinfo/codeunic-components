@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CardHeaderProps } from "./CardHeader.types";
-import "./CardHeader.scss";
+import style from "./CardHeader.scss";
 import { BEM } from "../../libs/BEM";
 import Badge from "../Badge/Badge";
 
 const CardHeader: React.FC<CardHeaderProps> = (props) => {
-    const bm = new BEM("CardHeader", {});
+    const bm = new BEM("CardHeader", {}, style);
     bm.Append(props.className);
     return (
         <header className={bm.toString()}>

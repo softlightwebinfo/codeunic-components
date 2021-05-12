@@ -1,11 +1,11 @@
 // Generated with util/create-component.js
 import React, { useEffect, useRef } from "react";
 import { VideoHlsProps } from "./VideoHls.types";
-import "./VideoHls.scss";
+import style from "./VideoHls.scss";
 import { BEM } from "../../libs/BEM";
 import Hls from 'hls.js'
 const VideoHls: React.FC<VideoHlsProps> = (props) => {
-    const bm = new BEM("VideoHls", {});
+    const bm = new BEM("VideoHls", {}, style);
     bm.Append(props.className);
     const videoRef = useRef(null)
 

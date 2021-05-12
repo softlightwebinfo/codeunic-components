@@ -3,7 +3,7 @@ import React from "react";
 
 import { SlickListProps } from "./SlickList.types";
 
-import "./SlickList.scss";
+import style from "./SlickList.scss";
 import { BEM } from "../../libs/BEM";
 import SlickItem from "../SlickItem/SlickItem";
 import Grid from "../Grid/Grid";
@@ -12,7 +12,7 @@ const SlickList: React.FC<SlickListProps> = (props) => {
     const {className, style, data = [], active = 0} = props;
     const bm = new BEM("SlickList", {
         isDetail: props.isDetail,
-    });
+    }, style);
     bm.Append(className)
     const Component: any = props.component ?? SlickItem;
 

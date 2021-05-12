@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SocialIconsProps } from "./SocialIcons.types";
-import "./SocialIcons.scss";
+import style from "./SocialIcons.scss";
 import { BEM } from "../../libs/BEM";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitch, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 const SocialIcons: React.FC<SocialIconsProps> = (props) => {
-    const bm = new BEM("SocialIcons", {});
+    const bm = new BEM("SocialIcons", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()}>

@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewVideoConferenceProps } from "./ViewVideoConference.types";
-import "./ViewVideoConference.scss";
+import style from "./ViewVideoConference.scss";
 import { BEM } from "../../libs/BEM";
 import Navbar from "../../components/Navbar/Navbar";
 import Logo from "../../components/Logo/Logo";
@@ -20,7 +20,7 @@ import InputGroup from "../../components/InputGroup/InputGroup";
 import Button from "../../components/Button/Button";
 
 const ViewVideoConference: React.FC<ViewVideoConferenceProps> = (props) => {
-    const bm = new BEM("ViewVideoConference", {});
+    const bm = new BEM("ViewVideoConference", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

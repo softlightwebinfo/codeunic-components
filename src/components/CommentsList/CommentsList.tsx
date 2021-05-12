@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CommentsListProps } from "./CommentsList.types";
-import "./CommentsList.scss";
+import style from "./CommentsList.scss";
 import { BEM } from "../../libs/BEM";
 import Comment from "../Comment/Comment";
 
 const CommentsList: React.FC<CommentsListProps> = (props) => {
-    const bm = new BEM("CommentsList", {});
+    const bm = new BEM("CommentsList", {}, style);
     bm.Append(props.className);
     return (
         <ul className={bm.toString()}>

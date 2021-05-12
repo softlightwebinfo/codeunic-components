@@ -3,7 +3,7 @@ import React from "react";
 
 import { TablePriceProps } from "./TablePrice.types";
 
-import "./TablePrice.scss";
+import style from "./TablePrice.scss";
 import { BEM } from "../../libs/BEM";
 import PriceBox from "../PriceBox/PriceBox";
 import PriceRow from "../PriceRow/PriceRow";
@@ -11,7 +11,7 @@ import { vars } from "../../settings/constants";
 import ButtonDefault from "../ButtonDefault/ButtonDefault";
 
 const TablePrice: React.FC<TablePriceProps> = (props) => {
-    const bm = new BEM("TablePrice", {});
+    const bm = new BEM("TablePrice", {}, style);
     bm.Append(props.className);
     const dataLength = props.columns.length;
     return (

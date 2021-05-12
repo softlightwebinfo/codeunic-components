@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React, { useState } from "react";
 import { DropdownProps } from "./Dropdown.types";
-import "./Dropdown.scss";
+import style from "./Dropdown.scss";
 import { BEM } from "../../libs/BEM";
 import ClickOutside from "../ClickOutside/ClickOutside";
 
 const Dropdown: React.FC<DropdownProps> = (props) => {
     const [open, setOpen] = useState(false);
-    const bm = new BEM("Dropdown", {});
+    const bm = new BEM("Dropdown", {}, style);
     bm.Append(props.className);
     const onClose = () => setOpen(false);
     return (

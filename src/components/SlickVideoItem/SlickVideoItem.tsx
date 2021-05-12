@@ -3,14 +3,14 @@ import React from "react";
 
 import { SlickVideoItemProps } from "./SlickVideoItem.types";
 
-import "./SlickVideoItem.scss";
+import style from "./SlickVideoItem.scss";
 import { BEM } from "../../libs/BEM";
 import Button from "../Button/Button";
 import CardTitleDetail from "../CardTitleDetail/CardTitleDetail";
 
 const SlickVideoItem: React.FC<SlickVideoItemProps> = (props) => {
     const {list = []} = props;
-    const bm = new BEM("SlickVideoItem", {});
+    const bm = new BEM("SlickVideoItem", {}, style);
     return (
         <div className={bm.toString()}>
             <img src={props.image} alt={props.title} title={props.title}/>

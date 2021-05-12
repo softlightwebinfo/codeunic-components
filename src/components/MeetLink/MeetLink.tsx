@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React from "react";
 import { MeetLinkProps } from "./MeetLink.types";
-import "./MeetLink.scss";
+import style from "./MeetLink.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { BEM } from "../../libs/BEM";
 
 const MeetLink: React.FC<MeetLinkProps> = (props) => {
-    const bm = new BEM("MeetLink", {});
+    const bm = new BEM("MeetLink", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

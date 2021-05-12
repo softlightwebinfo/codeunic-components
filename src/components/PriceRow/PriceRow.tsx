@@ -3,7 +3,7 @@ import React from "react";
 
 import { PriceRowProps } from "./PriceRow.types";
 
-import "./PriceRow.scss";
+import style from "./PriceRow.scss";
 import { BEM } from "../../libs/BEM";
 import { faCheckCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,7 +31,7 @@ const icon = (data) => {
 }
 
 const PriceRow: React.FC<PriceRowProps> = (props) => {
-    const bm = new BEM("PriceRow", {});
+    const bm = new BEM("PriceRow", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={{

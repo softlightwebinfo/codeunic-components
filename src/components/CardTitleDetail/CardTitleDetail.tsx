@@ -1,13 +1,13 @@
 import React from "react";
 import { CardTitleDetailProps } from "./CardTitleDetail.types";
-import "./CardTitleDetail.scss";
+import style from "./CardTitleDetail.scss";
 import ListData from "../ListData/ListData";
 import ButtonDefault from "../ButtonDefault/ButtonDefault";
 import Button from "../Button/Button";
 import { BEM } from "../../libs/BEM";
 
 const CardTitleDetail: React.FC<CardTitleDetailProps> = (props) => {
-    const bm = new BEM("CardTitleDetail", {});
+    const bm = new BEM("CardTitleDetail", {}, style);
     bm.Append(props.className);
     const {list = []} = props;
     return (

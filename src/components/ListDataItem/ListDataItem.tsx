@@ -3,11 +3,11 @@ import React from "react";
 
 import { ListDataItemProps } from "./ListDataItem.types";
 
-import "./ListDataItem.scss";
+import style from "./ListDataItem.scss";
 import { BEM } from "../../libs/BEM";
 
 const ListDataItem: React.FC<ListDataItemProps> = (props) => {
-    const bm = new BEM("ListDataItem", {});
+    const bm = new BEM("ListDataItem", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

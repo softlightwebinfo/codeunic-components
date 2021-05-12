@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React, { forwardRef, useCallback, useEffect, useImperativeHandle, useState } from "react";
 import { FlyoutProps } from "./Flyout.types";
-import "./Flyout.scss";
+import style from "./Flyout.scss";
 import { BEM } from "../../libs/BEM";
 import ClickOutside from "../ClickOutside/ClickOutside";
 import { createPortal } from "react-dom";
@@ -25,7 +25,7 @@ const Flyout = (props: FlyoutProps, ref) => {
             document.removeEventListener('keydown', handleEscape, false)
         }
     }, [handleEscape, isOpen])
-    const bm = new BEM("Flyout", {});
+    const bm = new BEM("Flyout", {}, style);
     bm.Append(props.className)
     if (typeof document == "undefined") return null;
     return createPortal(

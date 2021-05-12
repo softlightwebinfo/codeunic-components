@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CategoryProps } from "./Category.types";
-import "./Category.scss";
+import style from "./Category.scss";
 import { BEM } from "../../libs/BEM";
 import Badge from "../Badge/Badge";
 import Image from "../Image/Image";
 
 const Category: React.FC<CategoryProps> = (props) => {
-    const bm = new BEM("Category", {});
+    const bm = new BEM("Category", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

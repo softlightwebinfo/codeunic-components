@@ -3,7 +3,7 @@ import React from "react";
 
 import { SlickArrowProps } from "./SlickArrow.types";
 
-import "./SlickArrow.scss";
+import style from "./SlickArrow.scss";
 import { BEM } from "../../libs/BEM";
 import Arrow from "../Arrow/Arrow";
 
@@ -11,7 +11,7 @@ const SlickArrow: React.FC<SlickArrowProps> = (props) => {
     const {left} = props;
     const bm = new BEM("SlickArrow", {
         left
-    });
+    }, style);
 
     bm.Append(props.className);
 

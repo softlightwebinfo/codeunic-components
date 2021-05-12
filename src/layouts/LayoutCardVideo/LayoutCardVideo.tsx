@@ -3,13 +3,13 @@ import React from "react";
 
 import { LayoutCardVideoProps } from "./LayoutCardVideo.types";
 
-import "./LayoutCardVideo.scss";
+import style from "./LayoutCardVideo.scss";
 import Card from "../../components/Card/Card";
 import CardTitleDescription from "../../components/CardTitleDescription/CardTitleDescription";
 import { BEM } from "../../libs/BEM";
 
 const LayoutCardVideo: React.FC<LayoutCardVideoProps> = (props) => {
-    const bm = new BEM("LayoutCardVideo", {});
+    const bm = new BEM("LayoutCardVideo", {}, style);
     bm.Append(props.className);
     return (
         <Card

@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React from "react";
 import { MenuProps } from "./Menu.types";
-import "./Menu.scss";
+import style from "./Menu.scss";
 import { BEM } from "../../libs/BEM";
 
 const Menu: React.FC<MenuProps> = (props) => {
     const bm = new BEM("Menu", {
         horizontal: props.horizontal,
-    });
+    }, style);
     bm.Append(props.className)
     return (
         <ul

@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewCallVideoProps } from "./ViewCallVideo.types";
-import "./ViewCallVideo.scss";
+import style from "./ViewCallVideo.scss";
 import { BEM } from "../../libs/BEM";
 import Messenger from "../../components/Messenger/Messenger";
 import MeetingInfo from "../../components/MeetingInfo/MeetingInfo";
@@ -9,7 +9,7 @@ import CallFooter from "../../components/CallFooter/CallFooter";
 import CallHeader from "../../components/CallHeader/CallHeader";
 
 const ViewCallVideo: React.FC<ViewCallVideoProps> = (props) => {
-    const bm = new BEM("ViewCallVideo", {});
+    const bm = new BEM("ViewCallVideo", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

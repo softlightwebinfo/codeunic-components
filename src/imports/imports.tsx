@@ -3,7 +3,7 @@ import React from "react";
 
 import { importsProps } from "./imports.types";
 
-import "./imports.scss";
+import style from "./imports.scss";
 
 const imports: React.FC<importsProps> = ({ foo }) => (
     <div data-testid="imports" className="foo-bar">{foo}</div>

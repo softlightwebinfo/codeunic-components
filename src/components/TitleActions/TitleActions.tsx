@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TitleActionsProps } from "./TitleActions.types";
-import "./TitleActions.scss";
+import style from "./TitleActions.scss";
 import { BEM } from "../../libs/BEM";
 import List from "../List/List";
 
 const TitleActions: React.FC<TitleActionsProps> = (props) => {
-    const bm = new BEM("TitleActions", {});
+    const bm = new BEM("TitleActions", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

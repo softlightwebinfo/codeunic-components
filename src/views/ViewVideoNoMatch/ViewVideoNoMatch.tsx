@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewVideoNoMatchProps } from "./ViewVideoNoMatch.types";
-import "./ViewVideoNoMatch.scss";
+import style from "./ViewVideoNoMatch.scss";
 import { BEM } from "../../libs/BEM";
 import Navbar from "../../components/Navbar/Navbar";
 import Logo from "../../components/Logo/Logo";
@@ -10,7 +10,7 @@ import Section from "../../components/Section/Section";
 import Button from "../../components/Button/Button";
 
 const ViewVideoNoMatch: React.FC<ViewVideoNoMatchProps> = (props) => {
-    const bm = new BEM("ViewVideoNoMatch", {});
+    const bm = new BEM("ViewVideoNoMatch", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

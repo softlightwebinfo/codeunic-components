@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { GridProps } from "./Grid.types";
-import "./Grid.scss";
+import style from "./Grid.scss";
 import { BEM } from "../../libs/BEM";
 
 const Grid: React.FC<GridProps> = (props) => {
@@ -9,7 +9,7 @@ const Grid: React.FC<GridProps> = (props) => {
     const bm = new BEM("Grid", {
         default: isDefault,
         [`col-${props.col}`]: !!props.col,
-    });
+    }, style);
     bm.Append(props.className);
     return (
         <div style={props.style} className={bm.toString()}>

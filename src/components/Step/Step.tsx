@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { StepProps } from "./Step.types";
-import "./Step.scss";
+import style from "./Step.scss";
 import { BEM } from "../../libs/BEM";
 import StepItem from "../StepItem/StepItem";
 import Badge from "../Badge/Badge";
@@ -9,7 +9,7 @@ import Badge from "../Badge/Badge";
 const Step: React.FC<StepProps> = (props) => {
     const bm = new BEM("Step", {
         inset: props.inset,
-    })
+    }, style)
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

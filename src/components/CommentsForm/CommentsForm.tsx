@@ -3,14 +3,14 @@ import React from "react";
 
 import { CommentsFormProps } from "./CommentsForm.types";
 
-import "./CommentsForm.scss";
+import style from "./CommentsForm.scss";
 import Widget from "../../widgets/Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import Button from "../Button/Button";
 import Textarea from "../Textarea/Textarea";
 
 const CommentsForm: React.FC<CommentsFormProps> = (props) => {
-    const bm = new BEM("CommentsForm", {});
+    const bm = new BEM("CommentsForm", {}, style);
     bm.Append(props.className);
     return (
         <Widget className={bm.toString()} style={props.style}>

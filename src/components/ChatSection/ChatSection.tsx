@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ChatSectionProps } from "./ChatSection.types";
-import "./ChatSection.scss";
+import style from "./ChatSection.scss";
 import { BEM } from "../../libs/BEM";
 import ChatBlock from "../ChatBlock/ChatBlock";
 
 const ChatSection: React.FC<ChatSectionProps> = (props) => {
-    const bm = new BEM("ChatSection", {});
+    const bm = new BEM("ChatSection", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

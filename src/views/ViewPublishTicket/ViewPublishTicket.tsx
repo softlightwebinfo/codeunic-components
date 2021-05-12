@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewPublishTicketProps } from "./ViewPublishTicket.types";
-import "./ViewPublishTicket.scss";
+import style from "./ViewPublishTicket.scss";
 import { BEM } from "../../libs/BEM";
 import { TitleSubtitle } from "../../components";
 import Container from "../../components/Container/Container";
@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTicketAlt } from "@fortawesome/free-solid-svg-icons";
 
 const ViewPublishTicket: React.FC<ViewPublishTicketProps> = (props) => {
-    const bm = new BEM("ViewPublishTicket", {});
+    const bm = new BEM("ViewPublishTicket", {}, style);
     bm.Children(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

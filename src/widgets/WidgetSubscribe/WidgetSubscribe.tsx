@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { WidgetSubscribeProps } from "./WidgetSubscribe.types";
-import "./WidgetSubscribe.scss";
+import style from "./WidgetSubscribe.scss";
 import Widget from "../Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import { TitleSubtitle } from "../../components";
@@ -11,7 +11,7 @@ import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
 
 const WidgetSubscribe: React.FC<WidgetSubscribeProps> = (props) => {
-    const bm = new BEM("WidgetSubscribe", {});
+    const bm = new BEM("WidgetSubscribe", {}, style);
     bm.Append(props.className);
     return (
         <Widget className={bm.toString()} style={props.style}>

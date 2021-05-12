@@ -1,14 +1,14 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ChatSendMsgProps } from "./ChatSendMsg.types";
-import "./ChatSendMsg.scss";
+import style from "./ChatSendMsg.scss";
 import { BEM } from "../../libs/BEM";
 import Input from "../Input/Input";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ChatSendMsg: React.FC<ChatSendMsgProps> = (props) => {
-    const bm = new BEM("ChatSendMsg", {});
+    const bm = new BEM("ChatSendMsg", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

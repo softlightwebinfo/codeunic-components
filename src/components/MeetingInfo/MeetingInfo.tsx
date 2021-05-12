@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { MeetingInfoProps } from "./MeetingInfo.types";
-import "./MeetingInfo.scss";
+import style from "./MeetingInfo.scss";
 import { BEM } from "../../libs/BEM";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +13,7 @@ import PermissionText from "../PermissionText/PermissionText";
 import TextSmall from "../TextSmall/TextSmall";
 
 const MeetingInfo: React.FC<MeetingInfoProps> = (props) => {
-    const bm = new BEM("MeetingInfo", {});
+    const bm = new BEM("MeetingInfo", {}, style);
     bm.Append(props.className)
     return (
         <div className={bm.toString()} style={props.style}>

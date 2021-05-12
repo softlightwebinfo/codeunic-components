@@ -3,11 +3,11 @@ import React from "react";
 
 import { NavProps } from "./Nav.types";
 
-import "./Nav.scss";
+import style from "./Nav.scss";
 import { BEM } from "../../libs/BEM";
 
 const Nav: React.FC<NavProps> = (props) => {
-    const bm = new BEM("Nav", {});
+    const bm = new BEM("Nav", {}, style);
     bm.Append(props.className);
     return (
         <nav className={bm.toString()}>

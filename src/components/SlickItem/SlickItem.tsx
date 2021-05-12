@@ -3,11 +3,11 @@ import React from "react";
 
 import { SlickItemProps } from "./SlickItem.types";
 
-import "./SlickItem.scss";
+import style from "./SlickItem.scss";
 import { BEM } from "../../libs/BEM";
 
 const SlickItem: React.FC<SlickItemProps> = (props) => {
-    const bm = new BEM("SlickItem", {});
+    const bm = new BEM("SlickItem", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

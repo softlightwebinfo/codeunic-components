@@ -1,13 +1,13 @@
 // Generated with util/create-component.js
 import React from "react";
 import { FooterCopyrightProps } from "./FooterCopyright.types";
-import "./FooterCopyright.scss";
+import style from "./FooterCopyright.scss";
 import { BEM } from "../../libs/BEM";
 import Nav from "../Nav/Nav";
 import { year } from "../../libs/functions";
 
 const FooterCopyright: React.FC<FooterCopyrightProps> = (props) => {
-    const bm = new BEM("FooterCopyright", {});
+    const bm = new BEM("FooterCopyright", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>

@@ -1,11 +1,11 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SectionProps } from "./Section.types";
-import "./Section.scss";
+import style from "./Section.scss";
 import { BEM } from "../../libs/BEM";
 
 const Section: React.FC<SectionProps> = (props) => {
-    const bm = new BEM("Section", {});
+    const bm = new BEM("Section", {}, style);
     bm.Append(props.className);
     return (
         <section className={bm.toString()} style={props.style}>

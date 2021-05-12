@@ -3,7 +3,7 @@ import React from "react";
 
 import { ButtonDefaultProps } from "./ButtonDefault.types";
 
-import "./ButtonDefault.scss";
+import style from "./ButtonDefault.scss";
 import Button from "../Button/Button";
 
 const ButtonDefault: React.FC<ButtonDefaultProps> = ({...props}) => (

@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewTicketHomePageProps } from "./ViewTicketHomePage.types";
-import "./ViewTicketHomePage.scss";
+import style from "./ViewTicketHomePage.scss";
 import { BEM } from "../../libs/BEM";
 import TitleSubtitle from "../../components/TitleSubtitle/TitleSubtitle";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
@@ -12,7 +12,7 @@ import Container from "../../components/Container/Container";
 import Grid from "../../components/Grid/Grid";
 
 const ViewTicketHomePage: React.FC<ViewTicketHomePageProps> = (props) => {
-    const bm = new BEM("ViewTicketHomePage", {});
+    const bm = new BEM("ViewTicketHomePage", {}, style);
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>
@@ -36,13 +36,13 @@ const ViewTicketHomePage: React.FC<ViewTicketHomePageProps> = (props) => {
             </div>
             <div className={bm.Children("steps")}>
                 <TitleSubtitle className={bm.Children("steps-title")} center {...props.titleFeatures}/>
-               <Container>
-                   <Grid col={3}>
-                       {props.features.map((feature, index) => (
-                           <WidgetStat key={index}{...feature}/>
-                       ))}
-                   </Grid>
-               </Container>
+                <Container>
+                    <Grid col={3}>
+                        {props.features.map((feature, index) => (
+                            <WidgetStat key={index}{...feature}/>
+                        ))}
+                    </Grid>
+                </Container>
             </div>
         </div>
     );
