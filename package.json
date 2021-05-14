@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/components",
-  "version": "0.12.2",
+  "version": "0.13.1",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -16,7 +16,8 @@
     "storybook:export": "build-storybook",
     "generate": "node ./util/create-component",
     "imports": "node ./util/create-imports",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "build-css": "node-sass --include-path src/sass src/sass/index.scss build/css/index.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -75,6 +76,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@m2g/react-plyr": "^1.2.4",
-    "hls.js": "^1.0.2"
+    "hls.js": "^1.0.2",
+    "rollup-plugin-sass": "^1.2.2",
+    "sass": "^1.32.13"
   }
 }
