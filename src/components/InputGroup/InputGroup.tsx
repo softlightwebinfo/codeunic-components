@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { InputGroupProps } from "./InputGroup.types";
-import "./InputGroup.scss";
 import { BEM } from "../../libs/BEM";
 
 const InputGroup: React.FC<InputGroupProps> = (props) => {

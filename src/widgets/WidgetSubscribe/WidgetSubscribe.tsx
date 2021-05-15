@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { WidgetSubscribeProps } from "./WidgetSubscribe.types";
-import "./WidgetSubscribe.scss";
 import Widget from "../Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import { TitleSubtitle } from "../../components";

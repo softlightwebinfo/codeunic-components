@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { FooterCopyrightProps } from "./FooterCopyright.types";
-import "./FooterCopyright.scss";
 import { BEM } from "../../libs/BEM";
 import Nav from "../Nav/Nav";
 import { year } from "../../libs/functions";

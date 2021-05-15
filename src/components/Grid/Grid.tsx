@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { GridProps } from "./Grid.types";
-import "./Grid.scss";
 import { BEM } from "../../libs/BEM";
 
 const Grid: React.FC<GridProps> = (props) => {

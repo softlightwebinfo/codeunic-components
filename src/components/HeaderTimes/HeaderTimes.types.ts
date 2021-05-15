@@ -5,5 +5,6 @@ export interface HeaderTimesProps extends IProps {
     onClick(e: any);
 
     padding?: boolean;
+    default?: boolean;
     title: string;
 }

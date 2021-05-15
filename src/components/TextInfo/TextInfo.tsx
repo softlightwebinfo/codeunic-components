@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TextInfoProps } from "./TextInfo.types";
-import "./TextInfo.scss";
 import { BEM } from "../../libs/BEM";
 
 const TextInfo: React.FC<TextInfoProps> = (props) => {

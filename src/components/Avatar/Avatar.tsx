@@ -2,7 +2,6 @@
 import React from "react";
 import { AvatarProps } from "./Avatar.types";
 import Image from "../Image/Image";
-import "./Avatar.scss";
 import { BEM } from "../../libs/BEM";
 
 const Avatar: React.FC<AvatarProps> = (props) => {

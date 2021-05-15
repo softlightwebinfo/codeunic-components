@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { TablePriceProps } from "./TablePrice.types";
-
-import "./TablePrice.scss";
 import { BEM } from "../../libs/BEM";
 import PriceBox from "../PriceBox/PriceBox";
 import PriceRow from "../PriceRow/PriceRow";

@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { PriceBoxProps } from "./PriceBox.types";
-import "./PriceBox.scss";
 import { BEM } from "../../libs/BEM";
 
 const PriceBox: React.FC<PriceBoxProps> = (props) => {

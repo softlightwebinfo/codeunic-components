@@ -28,7 +28,10 @@ export default {
         resolve(),
         commonjs(),
         typescript({useTsconfigDeclarationDir: true}),
-        postcss(),
+        postcss({
+            extract: true,
+            minimize: true,
+        }),
         copy({
             targets: [
                 {

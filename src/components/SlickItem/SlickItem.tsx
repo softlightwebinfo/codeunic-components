@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { SlickItemProps } from "./SlickItem.types";
-
-import "./SlickItem.scss";
 import { BEM } from "../../libs/BEM";
 
 const SlickItem: React.FC<SlickItemProps> = (props) => {

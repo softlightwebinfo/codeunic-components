@@ -1,0 +1,17 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.TableColumn {
+  padding: .75rem 1.5rem;
+  text-align: left;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+  color: rgba(107, 114, 128, 1);
+
+  &--isHeading {
+    text-transform: uppercase;
+  }
+}

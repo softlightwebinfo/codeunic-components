@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { FormLabelProps } from "./FormLabel.types";
-import "./FormLabel.scss";
 import { BEM } from "../../libs/BEM";
 import TextInfo from "../TextInfo/TextInfo";
 

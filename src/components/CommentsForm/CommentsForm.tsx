@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { CommentsFormProps } from "./CommentsForm.types";
-
-import "./CommentsForm.scss";
 import Widget from "../../widgets/Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import Button from "../Button/Button";

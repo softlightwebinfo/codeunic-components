@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { StepItemProps } from "./StepItem.types";
-import "./StepItem.scss";
 import { BEM } from "../../libs/BEM";
 
 const StepItem: React.FC<StepItemProps> = (props) => {

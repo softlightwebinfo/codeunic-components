@@ -1,0 +1,26 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/mixin.scss";
+
+.Popover {
+  position: relative;
+
+  &__menu {
+    position: absolute;
+    bottom: 100%;
+    min-width: 200px;
+    background-color: var(--template-secondary);
+    display: inline-flex;
+    width: fit-content;
+    z-index: $popover-z-index;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 500px;
+    box-shadow: 0 0 10px -2px black;
+
+    &::before {
+      @include Arrow();
+    }
+  }
+}

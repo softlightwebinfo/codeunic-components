@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { BadgesProps } from "./Badges.types";
-import "./Badges.scss";
 import { BEM } from "../../libs/BEM";
 import Badge from "../Badge/Badge";
 

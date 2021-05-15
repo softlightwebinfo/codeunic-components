@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TextareaProps } from "./Textarea.types";
-import "./Textarea.scss";
 import { BEM } from "../../libs/BEM";
 import FormLabel from "../FormLabel/FormLabel";
 
@@ -16,6 +15,7 @@ const Textarea: React.FC<TextareaProps> = (props) => {
                 value={props.value}
                 onChange={props.onChange}
                 placeholder={props.placeholder}
+                name={props.name}
             />
         </FormLabel>
     );

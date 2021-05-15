@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { NavbarProps } from "./Navbar.types";
-import "./Navbar.scss";
 import { BEM } from "../../libs/BEM";
 
 const Navbar: React.FC<NavbarProps> = (props) => {

@@ -56,6 +56,12 @@
     @include backgroundColor(true, '-');
   }
 
+  &--original {
+    background: var(--template-terciary);
+    font-size: .875em;
+    border-radius: $border-radius;
+  }
+
   > svg {
     margin-right: 10px;
   }

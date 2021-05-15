@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewTicketHomePageProps } from "./ViewTicketHomePage.types";
-import "./ViewTicketHomePage.scss";
 import { BEM } from "../../libs/BEM";
 import TitleSubtitle from "../../components/TitleSubtitle/TitleSubtitle";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";

@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React, { useImperativeHandle, useState } from "react";
-
 import { CarouselProps } from "./Carousel.types";
-
-import "./Carousel.scss";
 import { BEM } from "../../libs/BEM";
 import SlickList from "../SlickList/SlickList";
 import SlickArrow from "../SlickArrow/SlickArrow";

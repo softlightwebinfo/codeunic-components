@@ -9,6 +9,7 @@ export interface ButtonProps extends IProps {
     theme?: TTheme;
     children?: ReactNode | ReactElement | string;
     default?: boolean;
+    original?: boolean;
     single?: boolean;
     dark?: boolean;
     block?: boolean;

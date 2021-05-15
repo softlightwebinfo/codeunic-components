@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { RoundProps } from "./Round.types";
-import "./Round.scss";
 import { BEM } from "../../libs/BEM";
 
 const Round: React.FC<RoundProps> = (props) => {

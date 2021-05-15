@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { PermissionTextProps } from "./PermissionText.types";
-import "./PermissionText.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { BEM } from "../../libs/BEM";

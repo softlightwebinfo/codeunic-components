@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { PriceRowProps } from "./PriceRow.types";
-
-import "./PriceRow.scss";
 import { BEM } from "../../libs/BEM";
 import { faCheckCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

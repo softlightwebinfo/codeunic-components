@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewCallVideoProps } from "./ViewCallVideo.types";
-import "./ViewCallVideo.scss";
 import { BEM } from "../../libs/BEM";
 import Messenger from "../../components/Messenger/Messenger";
 import MeetingInfo from "../../components/MeetingInfo/MeetingInfo";

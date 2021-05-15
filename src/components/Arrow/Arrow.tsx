@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { ArrowProps } from "./Arrow.types";
-
-import "./Arrow.scss";
 import { BEM } from "../../libs/BEM";
 
 const Arrow: React.FC<ArrowProps> = (props) => {

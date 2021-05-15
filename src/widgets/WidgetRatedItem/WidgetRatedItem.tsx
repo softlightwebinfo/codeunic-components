@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React, { createRef } from "react";
 import { WidgetRatedItemProps } from "./WidgetRatedItem.types";
-import "./WidgetRatedItem.scss";
 import Widget from "../Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import TitleCategory from "../../components/TitleCategory/TitleCategory";

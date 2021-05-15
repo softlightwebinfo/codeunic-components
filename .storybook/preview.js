@@ -12,6 +12,7 @@
  */
 import "../src/sass/global.scss";
 import "../src/sass/storybook.scss";
+import "../src/sass/index.scss";
 /**
  * Decorators
  *

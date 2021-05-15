@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { DashboardProps } from "./Dashboard.types";
-
-import "./Dashboard.scss";
 import { BEM } from "../../libs/BEM";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";

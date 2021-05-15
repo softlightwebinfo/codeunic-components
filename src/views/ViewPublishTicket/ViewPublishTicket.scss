@@ -7,7 +7,16 @@
     max-width: 30em;
     margin: 40px auto auto;
   }
+
   .Input {
-    color: white!important;
+    color: white !important;
+  }
+
+  &__titleSubtitle {
+    margin-bottom: 20px;
+  }
+
+  &__ticket {
+    margin-bottom: 10px;
   }
 }

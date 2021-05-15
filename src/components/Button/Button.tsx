@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ButtonProps } from "./Button.types";
-import "./Button.scss";
 import { BEM } from "../../libs/BEM";
 
 const Button: React.FC<ButtonProps> = ({children, ...props}) => {
@@ -11,11 +10,12 @@ const Button: React.FC<ButtonProps> = ({children, ...props}) => {
         dark: props.dark,
         block: props.block,
         theme: props.theme,
+        original: props.original,
     });
     bm.Append(props.className);
     return (
         <button
-            type={props.type}
+            type={props.type ?? "button"}
             style={props.style}
             onClick={props.onClick}
             className={bm.toString()}

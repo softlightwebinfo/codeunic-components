@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ParallexProps } from "./Parallax.types";
-import "./Parallax.scss";
 import { BEM } from "../../libs/BEM";
 
 const Parallax: React.FC<ParallexProps> = (props) => {

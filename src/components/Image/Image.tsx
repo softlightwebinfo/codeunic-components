@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ImageProps } from "./Image.types";
-import "./Image.scss";
 import { BEM } from "../../libs/BEM";
 
 const Image: React.FC<ImageProps> = (props) => {
@@ -15,4 +14,3 @@ const Image: React.FC<ImageProps> = (props) => {
 }
 
 export default Image;
-

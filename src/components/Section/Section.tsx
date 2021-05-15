@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SectionProps } from "./Section.types";
-import "./Section.scss";
 import { BEM } from "../../libs/BEM";
 
 const Section: React.FC<SectionProps> = (props) => {

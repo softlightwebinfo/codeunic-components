@@ -1,0 +1,89 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.TableBase {
+  $then: &;
+  box-shadow: var(--iq-shadow);
+  border-color: rgba(229, 231, 235, 1);
+  border-bottom-width: 1px;
+  overflow: hidden;
+  width: 100%;
+
+  @media (min-width: 640px) {
+    border-radius: .5rem;
+  }
+
+  &__table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  &__thead {
+    background-color: rgba(249, 250, 251, 1);
+
+    #{$then}--dark & {
+      .TableRow {
+        background: var(--iq-light-card);
+        border: 0;
+        border-radius: 0;
+      }
+
+      .TableColumn {
+        color: var(--iq-body-text);
+      }
+    }
+  }
+
+  &__tbody {
+    background-color: rgba(255, 255, 255, 1);
+    border-top-width: calc(1px * calc(1 - 0));
+    border-color: rgba(229, 231, 235, 1);
+    border-bottom-width: 0;
+
+    #{$then}--hover & {
+      .TableRow {
+        transition: background .3s ease-in-out;
+
+        &:hover {
+          background-color: var(--iq-light-dark);
+          cursor: pointer;
+        }
+      }
+    }
+
+    #{$then}--dark & {
+      border: 0;
+      background: none;
+
+      .TableRow {
+        border-bottom: 10px solid var(--iq-light-card);
+        background-color: black;
+
+        &:first-child {
+          border-top: 0;
+        }
+
+        * {
+          color: var(--iq-body-text);
+        }
+      }
+    }
+  }
+
+  &--stripe {
+    .TableRow {
+      &:nth-child(even) {
+        background-color: #fcf9f9;
+      }
+    }
+  }
+
+  &--dark {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TextSmallProps } from "./TextSmall.types";
-import "./TextSmall.scss";
 import { BEM } from "../../libs/BEM";
 
 const TextSmall: React.FC<TextSmallProps> = (props) => {

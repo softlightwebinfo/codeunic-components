@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CommentsListProps } from "./CommentsList.types";
-import "./CommentsList.scss";
 import { BEM } from "../../libs/BEM";
 import Comment from "../Comment/Comment";
 

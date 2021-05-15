@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { MessengerProps } from "./Messenger.types";
-import "./Messenger.scss";
 import { BEM } from "../../libs/BEM";
 import HeaderTimes from "../HeaderTimes/HeaderTimes";
 import Flyout from "../Flyout/Flyout";

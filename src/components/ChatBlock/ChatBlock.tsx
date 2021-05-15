@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ChatBlockProps } from "./ChatBlock.types";
-import "./ChatBlock.scss";
 import { BEM } from "../../libs/BEM";
 
 const ChatBlock: React.FC<ChatBlockProps> = (props) => {

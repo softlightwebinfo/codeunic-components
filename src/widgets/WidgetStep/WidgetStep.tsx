@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { WidgetStepProps } from "./WidgetStep.types";
-import "./WidgetStep.scss";
 import Widget from "../Widget/Widget";
 import { BEM } from "../../libs/BEM";
 import AvatarTitle from "../../components/AvatarTitle/AvatarTitle";

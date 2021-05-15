@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewVideoConferenceProps } from "./ViewVideoConference.types";
-import "./ViewVideoConference.scss";
 import { BEM } from "../../libs/BEM";
 import Navbar from "../../components/Navbar/Navbar";
 import Logo from "../../components/Logo/Logo";

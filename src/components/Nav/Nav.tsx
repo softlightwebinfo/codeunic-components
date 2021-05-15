@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { NavProps } from "./Nav.types";
-
-import "./Nav.scss";
 import { BEM } from "../../libs/BEM";
 
 const Nav: React.FC<NavProps> = (props) => {

@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { SlickListProps } from "./SlickList.types";
-
-import "./SlickList.scss";
 import { BEM } from "../../libs/BEM";
 import SlickItem from "../SlickItem/SlickItem";
 import Grid from "../Grid/Grid";

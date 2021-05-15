@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { WidgetProps } from "./Widget.types";
-import "./Widget.scss";
 import { BEM } from "../../libs/BEM";
 
 const Widget: React.FC<WidgetProps> = (props) => {

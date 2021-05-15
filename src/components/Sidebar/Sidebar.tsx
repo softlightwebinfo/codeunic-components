@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SidebarProps } from "./Sidebar.types";
-import "./Sidebar.scss";
 import { BEM } from "../../libs/BEM";
 import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

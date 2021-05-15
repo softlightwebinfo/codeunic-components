@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ViewVideoNoMatchProps } from "./ViewVideoNoMatch.types";
-import "./ViewVideoNoMatch.scss";
 import { BEM } from "../../libs/BEM";
 import Navbar from "../../components/Navbar/Navbar";
 import Logo from "../../components/Logo/Logo";

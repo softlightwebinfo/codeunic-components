@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React, { Fragment } from "react";
 import { ViewVideoDetailProps } from "./ViewVideoDetail.types";
-import "./ViewVideoDetail.scss";
 import { BEM } from "../../libs/BEM";
 import TitleActions from "../../components/TitleActions/TitleActions";
 import { Carousel, Container, Grid, GridColumn, Section, VideoPlayer } from "../../components";

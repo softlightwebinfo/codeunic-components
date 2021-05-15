@@ -1,0 +1,46 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Checkbox {
+  display: flex;
+
+  & .Input input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .5rem;
+    height: 1.5rem;
+    padding: 0;
+    --tw-text-opacity: 1;
+    color: rgba(246, 105, 70, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1.5rem;
+    border: 1px solid #60606c !important;
+
+    &:checked {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L7 8.586 5.707 7.293z'/%3E%3C/svg%3E");
+      border-color: transparent;
+      background-color: currentColor;
+    }
+  }
+
+  &__info {
+    margin-left: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__wrapper {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

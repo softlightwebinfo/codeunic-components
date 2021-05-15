@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { LayoutVideoPremiumProps } from "./LayoutVideoPremium.types";
-import "./LayoutVideoPremium.scss";
 import { BEM } from "../../libs/BEM";
 import Parallax from "../../components/Parallax/Parallax";
 import { ContainerFluid } from "../../components";

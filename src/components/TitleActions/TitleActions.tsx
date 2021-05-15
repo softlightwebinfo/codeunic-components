@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { TitleActionsProps } from "./TitleActions.types";
-import "./TitleActions.scss";
 import { BEM } from "../../libs/BEM";
 import List from "../List/List";
 

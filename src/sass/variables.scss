@@ -20,9 +20,15 @@ $separator: .5rem;
 //Title
 $title: 1.1em;
 
+//Radius
+$border-radius: .5rem;
+
 //responsive
 $responsive-mobile: 480px;
 $responsive-tablet: 768px;
 $responsive-laptops: 1024px;
 $responsive-desktop: 1200px;
 $responsive-large: 1400px;
+
+// zIndex
+$popover-z-index: 9;

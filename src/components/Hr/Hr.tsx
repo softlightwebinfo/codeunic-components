@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { HrProps } from "./Hr.types";
-import "./Hr.scss";
 import { BEM } from "../../libs/BEM";
 
 const Hr: React.FC<HrProps> = (props) => {

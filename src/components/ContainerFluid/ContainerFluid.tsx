@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ContainerFluidProps } from "./ContainerFluid.types";
-import "./ContainerFluid.scss";
 import { BEM } from "../../libs/BEM";
 
 const ContainerFluid: React.FC<ContainerFluidProps> = ({children, ...props}) => {

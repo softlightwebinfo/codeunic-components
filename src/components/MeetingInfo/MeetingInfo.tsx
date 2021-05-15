@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { MeetingInfoProps } from "./MeetingInfo.types";
-import "./MeetingInfo.scss";
 import { BEM } from "../../libs/BEM";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

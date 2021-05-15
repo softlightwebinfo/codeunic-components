@@ -1,4 +1,7 @@
 :root {
+  --template: #141414;
+  --template-secondary: #151f30;
+  --template-terciary: rgba(246, 105, 70, 1);
   --animate-duration: 1s;
   --animate-delay: 1s;
   --animate-repeat: 1;
@@ -69,6 +72,7 @@
   --iq-primary-light: #f3fffe;
   --iq-bg1: #363636;
   --iq-disable: #313946;
+  --iq-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --active: black;
 }
 
@@ -123,6 +127,10 @@ a {
   transition-property: color, background-color, border-color;
   color: #007bff;
   background-color: transparent;
+}
+
+.h-overflow-hidden {
+  overflow: hidden;
 }
 
 ::selection {

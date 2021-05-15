@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { LogoProps } from "./Logo.types";
-import "./Logo.scss";
 import Image from "../Image/Image";
 import { BEM } from "../../libs/BEM";
 

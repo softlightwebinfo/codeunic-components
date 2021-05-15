@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CallHeaderProps } from "./CallHeader.types";
-import "./CallHeader.scss";
 import { BEM } from "../../libs/BEM";
 import HeaderItems from "../HeaderItems/HeaderItems";
 import { faCommentAlt, faUserCircle, faUserFriends } from "@fortawesome/free-solid-svg-icons";

@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { WidgetStatProps } from "./WidgetStat.types";
-import "./WidgetStat.scss";
 import { BEM } from "../../libs/BEM";
 import Widget from "../Widget/Widget";
 import Round from "../../components/Round/Round";

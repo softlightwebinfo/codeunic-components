@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { CardTitleDescriptionProps } from "./CardTitleDescription.types";
-
-import "./CardTitleDescription.scss";
 import Badge from "../Badge/Badge";
 import { BEM } from "../../libs/BEM";
 

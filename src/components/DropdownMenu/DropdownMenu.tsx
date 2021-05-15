@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { DropdownMenuProps } from "./DropdownMenu.types";
-
-import "./DropdownMenu.scss";
 import { BEM } from "../../libs/BEM";
 import Card from "../Card/Card";
 import CardHeader from "../CardHeader/CardHeader";

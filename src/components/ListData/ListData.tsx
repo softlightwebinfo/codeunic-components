@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { ListDataProps } from "./ListData.types";
-
-import "./ListData.scss";
 import { BEM } from "../../libs/BEM";
 import ListDataItem from "../ListDataItem/ListDataItem";
 

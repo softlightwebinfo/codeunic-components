@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { FooterProps } from "./Footer.types";
-
-import "./Footer.scss";
 import { BEM } from "../../libs/BEM";
 
 const Footer: React.FC<FooterProps> = (props) => {

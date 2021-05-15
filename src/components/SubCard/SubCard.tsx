@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SubCardProps } from "./SubCard.types";
-import "./SubCard.scss";
 import { BEM } from "../../libs/BEM";
 import CardIcon from "../CardIcon/CardIcon";
 import Card from "../Card/Card";

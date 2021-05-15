@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { PlanProps } from "./Plan.types";
-import "./Plan.scss";
 import { BEM } from "../../libs/BEM";
 import List from "../List/List";
 import ActiveItem from "../ActiveItem/ActiveItem";

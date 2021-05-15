@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { StepProps } from "./Step.types";
-import "./Step.scss";
 import { BEM } from "../../libs/BEM";
 import StepItem from "../StepItem/StepItem";
 import Badge from "../Badge/Badge";

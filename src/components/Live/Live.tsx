@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { LiveProps } from "./Live.types";
-import "./Live.scss";
 import { BEM } from "../../libs/BEM";
 import Category from "../Category/Category";
 import Badge from "../Badge/Badge";

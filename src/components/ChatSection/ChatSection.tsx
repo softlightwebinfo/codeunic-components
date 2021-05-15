@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ChatSectionProps } from "./ChatSection.types";
-import "./ChatSection.scss";
 import { BEM } from "../../libs/BEM";
 import ChatBlock from "../ChatBlock/ChatBlock";
 

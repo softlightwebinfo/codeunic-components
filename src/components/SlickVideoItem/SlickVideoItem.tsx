@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { SlickVideoItemProps } from "./SlickVideoItem.types";
-
-import "./SlickVideoItem.scss";
 import { BEM } from "../../libs/BEM";
 import Button from "../Button/Button";
 import CardTitleDetail from "../CardTitleDetail/CardTitleDetail";

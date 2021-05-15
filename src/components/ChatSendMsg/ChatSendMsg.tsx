@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ChatSendMsgProps } from "./ChatSendMsg.types";
-import "./ChatSendMsg.scss";
 import { BEM } from "../../libs/BEM";
 import Input from "../Input/Input";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";

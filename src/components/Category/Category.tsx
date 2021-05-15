@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CategoryProps } from "./Category.types";
-import "./Category.scss";
 import { BEM } from "../../libs/BEM";
 import Badge from "../Badge/Badge";
 import Image from "../Image/Image";

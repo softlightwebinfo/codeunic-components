@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CardHeaderProps } from "./CardHeader.types";
-import "./CardHeader.scss";
 import { BEM } from "../../libs/BEM";
 import Badge from "../Badge/Badge";
 

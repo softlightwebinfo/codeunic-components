@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { VideoPremiumProps } from "./VideoPremium.types";
-
-import "./VideoPremium.scss";
 import { BEM } from "../../libs/BEM";
 import Image from "../Image/Image";
 import CardTitleDetail from "../CardTitleDetail/CardTitleDetail";

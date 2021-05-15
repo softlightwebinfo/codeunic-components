@@ -3,5 +3,6 @@ run:
 	yarn storybook
 
 publish:
+	yarn build-css
 	yarn imports
 	yarn publish

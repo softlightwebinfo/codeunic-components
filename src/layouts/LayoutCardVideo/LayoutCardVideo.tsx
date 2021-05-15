@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { LayoutCardVideoProps } from "./LayoutCardVideo.types";
-
-import "./LayoutCardVideo.scss";
 import Card from "../../components/Card/Card";
 import CardTitleDescription from "../../components/CardTitleDescription/CardTitleDescription";
 import { BEM } from "../../libs/BEM";

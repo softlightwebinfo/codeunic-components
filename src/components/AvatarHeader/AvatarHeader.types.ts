@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 
 export interface AvatarHeaderProps extends IProps {
     default?: boolean;
+    white?: boolean;
     avatar: string | ReactNode;
     title: string;
     subTitle?: string;

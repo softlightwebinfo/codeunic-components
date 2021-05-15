@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { SlickArrowProps } from "./SlickArrow.types";
-
-import "./SlickArrow.scss";
 import { BEM } from "../../libs/BEM";
 import Arrow from "../Arrow/Arrow";
 

@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { RatedItemProps } from "./RatedItem.types";
-import "./RatedItem.scss";
 import { BEM } from "../../libs/BEM";
 import Card from "../Card/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

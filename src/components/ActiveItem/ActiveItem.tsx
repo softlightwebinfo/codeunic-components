@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { ActiveItemProps } from "./ActiveItem.types";
-import "./ActiveItem.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import { BEM } from "../../libs/BEM";

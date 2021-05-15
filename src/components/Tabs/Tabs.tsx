@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React, { useEffect, useState } from "react";
 import { TabsProps } from "./Tabs.types";
-import "./Tabs.scss";
 import { BEM } from "../../libs/BEM";
 import Tab from "../Tab/Tab";
 

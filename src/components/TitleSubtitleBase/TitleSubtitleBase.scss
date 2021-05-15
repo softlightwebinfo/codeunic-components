@@ -1,0 +1,17 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.TitleSubtitleBase {
+  &__title {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgba(17, 24, 39, 1);
+  }
+
+  &__subTitle {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgba(107, 114, 128, 1);
+  }
+}

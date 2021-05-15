@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { CallFooterProps } from "./CallFooter.types";
-import "./CallFooter.scss";
 import { BEM } from "../../libs/BEM";
 import {
     faAngleUp,

@@ -1,7 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
 import { SocialIconsProps } from "./SocialIcons.types";
-import "./SocialIcons.scss";
 import { BEM } from "../../libs/BEM";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitch, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"

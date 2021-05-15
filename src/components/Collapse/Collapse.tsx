@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { CollapseProps } from "./Collapse.types";
-import "./Collapse.scss";
 import { BEM } from "../../libs/BEM";
 import ButtonDefault from "../ButtonDefault/ButtonDefault";
 

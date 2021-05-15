@@ -1,6 +1,5 @@
 import React from "react";
 import { CardTitleDetailProps } from "./CardTitleDetail.types";
-import "./CardTitleDetail.scss";
 import ListData from "../ListData/ListData";
 import ButtonDefault from "../ButtonDefault/ButtonDefault";
 import Button from "../Button/Button";

@@ -5,8 +5,10 @@ import { FormLabelProps } from "../FormLabel/FormLabel.types";
 
 export interface InputProps extends IProps, FormLabelProps {
     value?: string;
+    name?: string;
     placeholder?: string;
     type?: TInputType;
+    default?: boolean;
 
     onChange?(evt: any);
 }

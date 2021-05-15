@@ -1,1 +1,1 @@
-export type TInputType = "date" | "time" | "file" | "text" | "email" | "password" | "tel" | "number";
+export type TInputType = "checkbox" | "date" | "time" | "file" | "text" | "email" | "password" | "tel" | "number";

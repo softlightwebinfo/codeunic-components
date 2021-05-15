@@ -8,6 +8,7 @@
   background-color: var(--iq-white);
   padding: 10px;
   position: relative;
+
   &__image {
     max-width: 100%;
     height: auto;
@@ -18,5 +19,10 @@
   &--default {
     padding: 0;
     background: none;
+  }
+
+  &--around {
+    background-color: var(--template-secondary);
+    border-radius: $border-radius;
   }
 }

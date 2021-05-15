@@ -1,0 +1,10 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/mixin.scss";
+
+.Select {
+  select {
+    @include Input;
+  }
+}

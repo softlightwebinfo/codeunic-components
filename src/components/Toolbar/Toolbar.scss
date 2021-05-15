@@ -1,0 +1,15 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Toolbar {
+  background-color: var(--template-secondary);
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  justify-content: flex-end;
+
+  .Button:first-child {
+    color: var(--template-terciary);
+  }
+}

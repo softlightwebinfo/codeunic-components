@@ -119,3 +119,19 @@
     border-color: #2f80ed;
   }
 }
+
+@mixin Arrow {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top: 7px solid;
+  border-right: 7px solid;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: calc(100% - 8px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: var(--template-secondary);
+}

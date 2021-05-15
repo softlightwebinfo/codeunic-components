@@ -23,4 +23,11 @@
   &--padding {
     padding: $margin-bottom;
   }
+
+  &--default {
+    &,
+    h3 {
+      color: white;
+    }
+  }
 }

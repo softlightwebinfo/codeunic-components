@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { ListDataItemProps } from "./ListDataItem.types";
-
-import "./ListDataItem.scss";
 import { BEM } from "../../libs/BEM";
 
 const ListDataItem: React.FC<ListDataItemProps> = (props) => {

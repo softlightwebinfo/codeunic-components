@@ -1,9 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
-
 import { GridColumnProps } from "./GridColumn.types";
-
-import "./GridColumn.scss";
 import { BEM } from "../../libs/BEM";
 
 const GridColumn: React.FC<GridColumnProps> = (props) => {
