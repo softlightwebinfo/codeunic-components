@@ -3,6 +3,7 @@
 @import "../../sass/typography.scss";
 
 .Menu {
+  $then: &;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -11,10 +12,8 @@
     margin-right: 10px;
   }
 
-  &__item {
-    list-style-type: none;
-    position: relative;
-    white-space: nowrap;
+  &__angle {
+    margin-left: 10px;
   }
 
   &__element {
@@ -22,7 +21,6 @@
     white-space: nowrap;
     color: var(--iq-body-text);
     position: relative;
-    padding: 10px 20px;
     line-height: 18px;
     display: flex;
     align-items: center;
@@ -30,6 +28,17 @@
     border-radius: 0;
     text-transform: capitalize;
     transition: all .5s ease-out 0s;
+    margin: 0;
+    padding: 0;
+
+    > div {
+      padding: 10px 20px;
+      border-left: 3px solid transparent;
+    }
+
+    .Menu {
+      padding: 10px 20px;
+    }
 
     &:hover {
       color: var(--iq-primary);
@@ -38,6 +47,24 @@
 
     &--icon {
       padding: 5px;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+
+    &--active {
+      a > #{$then}__element {
+        flex-direction: column;
+        align-items: flex-start;
+
+        > div {
+          color: #fb9678;
+          border-left: 3px solid #fb9678;
+        }
+      }
     }
   }
 

@@ -49,3 +49,34 @@ export const Component = () => <Menu
         },
     }}
 />;
+export const Submenus = () => <Menu
+    component={(component, data) => <a href={data.key}>{component}</a>}
+    menu={{
+        index: {
+            label: "Dashboard",
+            icon: <FontAwesomeIcon icon={faHome}/>
+        },
+        classification: {
+            label: "Classification",
+            icon: <FontAwesomeIcon icon={faStar}/>,
+            menu: {
+                comments: {
+                    label: "Comments",
+                    icon: <FontAwesomeIcon icon={faComment}/>,
+                },
+                prices: {
+                    label: "Prices",
+                    icon: <FontAwesomeIcon icon={faTags}/>
+                },
+            }
+        },
+        comments: {
+            label: "Comments",
+            icon: <FontAwesomeIcon icon={faComment}/>
+        },
+        prices: {
+            label: "Prices",
+            icon: <FontAwesomeIcon icon={faTags}/>
+        },
+    }}
+/>;
