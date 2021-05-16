@@ -1,6 +1,6 @@
 // Generated with util/create-component.js
 import React, { useCallback, useState } from "react";
-import { MenuProps } from "./Menu.types";
+import { IMenuData, MenuProps } from "./Menu.types";
 import { BEM } from "../../libs/BEM";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,8 @@ const Menu: React.FC<MenuProps> = (props) => {
     });
     bm.Append(props.className);
 
-    const onClick = useCallback((key) => (e) => {
+    const onClick = useCallback((key, item) => (e) => {
+        if (!item.menu) return;
         e.preventDefault();
         e.stopPropagation();
         setState(e => ({
@@ -27,7 +28,7 @@ const Menu: React.FC<MenuProps> = (props) => {
         >
             {Object.entries(props.menu ?? {}).map(([key, item]) => {
                 const component = <div className={bm.Modifier("element", "icon", !item.label && !!item.icon)}>
-                    <div onClick={onClick(key)}>
+                    <div onClick={onClick(key, item)}>
                         <span className={bm.Children("icon")}>{item.icon}</span>
                         {item.label}
                         {item.menu && (

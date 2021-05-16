@@ -6,6 +6,7 @@ import AvatarHeader from './AvatarHeader/AvatarHeader';
 import AvatarTitle from './AvatarTitle/AvatarTitle';
 import Badge from './Badge/Badge';
 import Badges from './Badges/Badges';
+import Breadcrumbs from './Breadcrumbs/Breadcrumbs';
 import Button from './Button/Button';
 import ButtonDefault from './ButtonDefault/ButtonDefault';
 import CallFooter from './CallFooter/CallFooter';
@@ -113,6 +114,7 @@ export {
 	AvatarTitle,
 	Badge,
 	Badges,
+	Breadcrumbs,
 	Button,
 	ButtonDefault,
 	CallFooter,
