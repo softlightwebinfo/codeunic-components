@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/components",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -54,6 +54,7 @@
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^10.0.0",
+    "dayjs": "^1.10.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "node-sass": "^5.0.0",
