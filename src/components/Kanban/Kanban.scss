@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Kanban {
+  padding: 2rem;
+  &__content {
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+    gap: 10px;
+  }
+}

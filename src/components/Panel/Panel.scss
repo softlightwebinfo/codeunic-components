@@ -1,0 +1,31 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Panel {
+  border-width: 0;
+  border-style: solid;
+  border-color: #dae4e9;
+  background-color: #dae4e9;
+  border-radius: .25rem;
+  flex-shrink: 0;
+  padding: .5rem;
+  min-width: 16rem;
+
+  > header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+
+    > h3 {
+      color: black;
+      font-size: .875rem;
+    }
+  }
+
+  > section {
+    margin-top: .5rem;
+    font-size: .875rem;
+  }
+}

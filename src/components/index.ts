@@ -51,6 +51,7 @@ import Image from './Image/Image';
 import Input from './Input/Input';
 import InputFile from './InputFile/InputFile';
 import InputGroup from './InputGroup/InputGroup';
+import Kanban from './Kanban/Kanban';
 import List from './List/List';
 import ListData from './ListData/ListData';
 import ListDataItem from './ListDataItem/ListDataItem';
@@ -63,6 +64,8 @@ import Messenger from './Messenger/Messenger';
 import Nav from './Nav/Nav';
 import Navbar from './Navbar/Navbar';
 import Overlay from './Overlay/Overlay';
+import Panel from './Panel/Panel';
+import PanelTask from './PanelTask/PanelTask';
 import Parallax from './Parallax/Parallax';
 import PermissionText from './PermissionText/PermissionText';
 import Plan from './Plan/Plan';
@@ -159,6 +162,7 @@ export {
 	Input,
 	InputFile,
 	InputGroup,
+	Kanban,
 	List,
 	ListData,
 	ListDataItem,
@@ -171,6 +175,8 @@ export {
 	Nav,
 	Navbar,
 	Overlay,
+	Panel,
+	PanelTask,
 	Parallax,
 	PermissionText,
 	Plan,

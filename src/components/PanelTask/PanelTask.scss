@@ -1,0 +1,33 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.PanelTask {
+  background-color: #fff;
+  border-color: #9babb4;
+  border-radius: .25rem;
+  border-bottom-width: 1px;
+  cursor: pointer;
+  padding: .5rem;
+  transition: background .3s ease-in-out;
+
+  & + & {
+    margin-top: .5rem;
+  }
+
+  > h4 {
+    color: black;
+  }
+
+  &__icon {
+    color: black;
+
+    svg {
+      margin-right: .2rem;
+    }
+  }
+
+  &:hover {
+    background-color: gainsboro;
+  }
+}
