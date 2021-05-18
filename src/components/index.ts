@@ -6,9 +6,11 @@ import AvatarHeader from './AvatarHeader/AvatarHeader';
 import AvatarTitle from './AvatarTitle/AvatarTitle';
 import Badge from './Badge/Badge';
 import Badges from './Badges/Badges';
+import BigCalendar from './BigCalendar/BigCalendar';
 import Breadcrumbs from './Breadcrumbs/Breadcrumbs';
 import Button from './Button/Button';
 import ButtonDefault from './ButtonDefault/ButtonDefault';
+import Calendar from './Calendar/Calendar';
 import CallFooter from './CallFooter/CallFooter';
 import CallHeader from './CallHeader/CallHeader';
 import Card from './Card/Card';
@@ -117,9 +119,11 @@ export {
 	AvatarTitle,
 	Badge,
 	Badges,
+	BigCalendar,
 	Breadcrumbs,
 	Button,
 	ButtonDefault,
+	Calendar,
 	CallFooter,
 	CallHeader,
 	Card,
