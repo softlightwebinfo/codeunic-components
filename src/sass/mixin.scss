@@ -39,6 +39,33 @@
       }
     }
   }
+  &#{$dash}success {
+    color: #fff;
+    background-color: var(--iq-success);
+    @if ($hover) {
+      &:hover {
+        background-color: var(--iq-success-hover);
+      }
+    }
+  }
+  &#{$dash}warning {
+    color: #fff;
+    background-color: var(--iq-warning);
+    @if ($hover) {
+      &:hover {
+        background-color: var(--iq-warning-hover);
+      }
+    }
+  }
+  &#{$dash}danger {
+    color: #fff;
+    background-color: var(--red);
+    @if ($hover) {
+      &:hover {
+        background-color: var(--iq-danger-hover);
+      }
+    }
+  }
 }
 
 @mixin Container() {

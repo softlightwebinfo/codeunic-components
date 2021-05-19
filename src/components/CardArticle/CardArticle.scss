@@ -1,0 +1,41 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardArticle {
+  background-color: white;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  * {
+    color: black;
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__title {
+    margin-top: 10px;
+
+    div {
+      margin: 0 !important;
+    }
+  }
+
+  & &__footer {
+    border-top: 1px solid rgba(47, 128, 237, 0.1);
+    border-bottom: 1px solid rgba(47, 128, 237, 0.1);
+    display: flex;
+    padding: 0px;
+  }
+
+  &__avatar {
+    padding: 10px;
+    background-color: rgba(243,244,246,var(--tw-bg-opacity));
+    * {
+      color: black !important;
+    }
+  }
+}

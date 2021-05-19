@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Window {
+  background-color: rgba(17, 24, 39, 1);
+  border-radius: .5rem;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  color: rgba(156, 163, 175, 1);
+
+  &__content {
+    padding: 1.5rem 2rem;
+  }
+}

@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/mixin.scss";
+@import "../../sass/typography.scss";
+
+.Rounded {
+  $sz: .75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  border-radius: 9999px;
+  display: inline-flex;
+  height: $sz;
+  width: $sz;
+
+  @include backgroundColor(true);
+}

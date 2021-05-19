@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.WindowHeader {
+  border-color: rgba(31, 41, 55, 1);
+  border-bottom-width: 1px;
+  padding: .75rem 2rem;
+
+  &__left {
+    display: flex;
+    gap: 5px;
+  }
+}

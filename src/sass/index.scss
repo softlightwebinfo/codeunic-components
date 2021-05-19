@@ -15,10 +15,12 @@
 @import '../components/CallFooter/CallFooter.scss';
 @import '../components/CallHeader/CallHeader.scss';
 @import '../components/Card/Card.scss';
+@import '../components/CardArticle/CardArticle.scss';
 @import '../components/CardContent/CardContent.scss';
 @import '../components/CardFooter/CardFooter.scss';
 @import '../components/CardHeader/CardHeader.scss';
 @import '../components/CardIcon/CardIcon.scss';
+@import '../components/CardImage/CardImage.scss';
 @import '../components/CardTitle/CardTitle.scss';
 @import '../components/CardTitleDescription/CardTitleDescription.scss';
 @import '../components/CardTitleDetail/CardTitleDetail.scss';
@@ -79,6 +81,7 @@
 @import '../components/Quote/Quote.scss';
 @import '../components/RatedItem/RatedItem.scss';
 @import '../components/Round/Round.scss';
+@import '../components/Rounded/Rounded.scss';
 @import '../components/Section/Section.scss';
 @import '../components/Select/Select.scss';
 @import '../components/Sidebar/Sidebar.scss';
@@ -111,6 +114,8 @@
 @import '../components/VideoHls/VideoHls.scss';
 @import '../components/VideoPlayer/VideoPlayer.scss';
 @import '../components/VideoPremium/VideoPremium.scss';
+@import '../components/Window/Window.scss';
+@import '../components/WindowHeader/WindowHeader.scss';
 
 @import '../widgets/Widget/Widget.scss';
 @import '../widgets/WidgetRatedItem/WidgetRatedItem.scss';

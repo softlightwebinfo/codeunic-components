@@ -14,4 +14,8 @@
     width: 100%;
     display: block;
   }
+
+  &--default {
+    box-shadow: none;
+  }
 }

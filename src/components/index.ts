@@ -14,10 +14,12 @@ import Calendar from './Calendar/Calendar';
 import CallFooter from './CallFooter/CallFooter';
 import CallHeader from './CallHeader/CallHeader';
 import Card from './Card/Card';
+import CardArticle from './CardArticle/CardArticle';
 import CardContent from './CardContent/CardContent';
 import CardFooter from './CardFooter/CardFooter';
 import CardHeader from './CardHeader/CardHeader';
 import CardIcon from './CardIcon/CardIcon';
+import CardImage from './CardImage/CardImage';
 import CardTitle from './CardTitle/CardTitle';
 import CardTitleDescription from './CardTitleDescription/CardTitleDescription';
 import CardTitleDetail from './CardTitleDetail/CardTitleDetail';
@@ -78,6 +80,7 @@ import PriceRow from './PriceRow/PriceRow';
 import Quote from './Quote/Quote';
 import RatedItem from './RatedItem/RatedItem';
 import Round from './Round/Round';
+import Rounded from './Rounded/Rounded';
 import Section from './Section/Section';
 import Select from './Select/Select';
 import Sidebar from './Sidebar/Sidebar';
@@ -110,6 +113,8 @@ import Toolbar from './Toolbar/Toolbar';
 import VideoHls from './VideoHls/VideoHls';
 import VideoPlayer from './VideoPlayer/VideoPlayer';
 import VideoPremium from './VideoPremium/VideoPremium';
+import Window from './Window/Window';
+import WindowHeader from './WindowHeader/WindowHeader';
 export {
 	ActiveItem,
 	AlertCircleIcon,
@@ -127,10 +132,12 @@ export {
 	CallFooter,
 	CallHeader,
 	Card,
+	CardArticle,
 	CardContent,
 	CardFooter,
 	CardHeader,
 	CardIcon,
+	CardImage,
 	CardTitle,
 	CardTitleDescription,
 	CardTitleDetail,
@@ -191,6 +198,7 @@ export {
 	Quote,
 	RatedItem,
 	Round,
+	Rounded,
 	Section,
 	Select,
 	Sidebar,
@@ -223,4 +231,6 @@ export {
 	VideoHls,
 	VideoPlayer,
 	VideoPremium,
+	Window,
+	WindowHeader,
 }
