@@ -1,0 +1,17 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.DetailWorkItem {
+  display: flex;
+  align-items: center;
+
+  .TitleSubtitle {
+    flex: 1;
+  }
+
+  &--borderBottom {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+  }
+}

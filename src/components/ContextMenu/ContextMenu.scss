@@ -1,0 +1,23 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.ContextMenu {
+  background-color: white;
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__item {
+    color: black;
+    font-size: .9em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover {
+      background-color: #f3f1f1;
+      cursor: pointer;
+    }
+  }
+}

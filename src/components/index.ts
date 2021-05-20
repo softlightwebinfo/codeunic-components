@@ -40,6 +40,9 @@ import CommentsList from './CommentsList/CommentsList';
 import Container from './Container/Container';
 import ContainerFluid from './ContainerFluid/ContainerFluid';
 import Content from './Content/Content';
+import ContextMenu from './ContextMenu/ContextMenu';
+import DatePoint from './DatePoint/DatePoint';
+import DetailWorkItem from './DetailWorkItem/DetailWorkItem';
 import Dropdown from './Dropdown/Dropdown';
 import DropdownMenu from './DropdownMenu/DropdownMenu';
 import Flyout from './Flyout/Flyout';
@@ -160,6 +163,9 @@ export {
 	Container,
 	ContainerFluid,
 	Content,
+	ContextMenu,
+	DatePoint,
+	DetailWorkItem,
 	Dropdown,
 	DropdownMenu,
 	Flyout,
