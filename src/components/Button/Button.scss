@@ -62,7 +62,14 @@
     border-radius: $border-radius;
   }
 
+
   > svg {
     margin-right: 10px;
+  }
+
+  &--isIcon {
+    > svg {
+      margin: 0;
+    }
   }
 }

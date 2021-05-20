@@ -66,6 +66,15 @@
       }
     }
   }
+  &#{$dash}white {
+    color: black;
+    background-color: white;
+    @if ($hover) {
+      &:hover {
+        background-color: #eceaea;
+      }
+    }
+  }
 }
 
 @mixin Container() {

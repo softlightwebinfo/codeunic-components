@@ -3,20 +3,24 @@
 @import "../../sass/typography.scss";
 
 .AvatarHeader {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  /* gap: 10px; */
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
   align-items: center;
-  column-gap: 10px;
 
   .Avatar {
     grid-row: span 2;
   }
 
-  span {
-    grid-column: 2;
+  &__content {
+    display: flex;
+    flex-direction: column;
 
-    &:nth-child(2) {
+    .TextInfo {
+      color: #cdcdcd;
+    }
+
+    span:nth-child(2) {
       grid-row: 1;
       display: block;
       font-size: 1.1em;
@@ -26,7 +30,7 @@
       text-transform: initial;
     }
 
-    &:nth-child(3) {
+    span:nth-child(3) {
       grid-row: 2;
       display: block;
       color: #cdcdcd;
@@ -49,6 +53,21 @@
 
       &:nth-child(3) {
         color: grey;
+      }
+    }
+  }
+
+  &--big {
+    span:nth-child(2) {
+      font-size: 1.3em;
+    }
+    .Avatar {
+      $sz: 80px;
+
+      &, img {
+        height: $sz;
+        width: $sz;
+        border-radius: 50%;
       }
     }
   }

@@ -1,0 +1,19 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardSection {
+  display: inline-flex;
+  position: relative;
+
+  &__title {
+    margin-top: 2rem;
+  }
+
+  &__button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+}

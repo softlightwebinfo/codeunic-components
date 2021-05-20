@@ -20,6 +20,8 @@ import CardFooter from './CardFooter/CardFooter';
 import CardHeader from './CardHeader/CardHeader';
 import CardIcon from './CardIcon/CardIcon';
 import CardImage from './CardImage/CardImage';
+import CardPanelUser from './CardPanelUser/CardPanelUser';
+import CardSection from './CardSection/CardSection';
 import CardTitle from './CardTitle/CardTitle';
 import CardTitleDescription from './CardTitleDescription/CardTitleDescription';
 import CardTitleDetail from './CardTitleDetail/CardTitleDetail';
@@ -138,6 +140,8 @@ export {
 	CardHeader,
 	CardIcon,
 	CardImage,
+	CardPanelUser,
+	CardSection,
 	CardTitle,
 	CardTitleDescription,
 	CardTitleDetail,

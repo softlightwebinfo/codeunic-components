@@ -1,0 +1,34 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.CardPanelUser {
+  padding: 0 !important;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+
+    .Button {
+      flex: 1;
+      background-color: #f9fafc;
+      color: black;
+      height: 60px;
+      margin: 0;
+      border: 0;
+      border-top: 2px solid gainsboro;
+
+      + .Button {
+        border-left: 1px solid gainsboro;
+      }
+    }
+  }
+}

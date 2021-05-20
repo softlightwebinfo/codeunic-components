@@ -11,7 +11,34 @@ export default {
 
 export const Default = () => <CardArticle
     image={"/images/photo.jpeg"}
+    category={"DETACHED HOUSE · 5y OLD"}
+    title={"750,000"}
+    subTitle={"742 Evergreen Terrace"}
+    buttons={[
+        {
+            children: (
+                <>
+                    <FontAwesomeIcon icon={faBed}/>
+                    3 Bedrooms
+                </>
+            )
+        },
+        {
+            children: (
+                <>
+                    <FontAwesomeIcon icon={faBath}/>
+                    2 Bathrooms
+                </>
+            )
+        },
+    ]}
+    avatar={{
+        avatar: "/images/avatar.png",
+        title: "Tiffany heffnet",
+        subTitle: "(555) 555-4321",
+    }}
 />;
+
 export const GridArticle = () => (
     <div style={{padding: 20}}>
         <Grid col={4}>

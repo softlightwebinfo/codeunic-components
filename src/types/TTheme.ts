@@ -1,1 +1,1 @@
-export type TTheme = "primary" | "secondary" | "default" | "dark" | "success" | "danger" | "warning";
+export type TTheme = "white" | "primary" | "secondary" | "default" | "dark" | "success" | "danger" | "warning";

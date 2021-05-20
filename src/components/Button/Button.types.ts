@@ -6,6 +6,7 @@ import { TButtonType } from "../../types/TButtonType";
 import { TTheme } from "../../types/TTheme";
 
 export interface ButtonProps extends IProps {
+    isIcon?: boolean;
     theme?: TTheme;
     children?: ReactNode | ReactElement | string;
     default?: boolean;

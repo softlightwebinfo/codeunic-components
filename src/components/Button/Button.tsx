@@ -6,6 +6,7 @@ import { BEM } from "../../libs/BEM";
 const Button: React.FC<ButtonProps> = ({children, ...props}) => {
     const bm = new BEM("Button", {
         default: props.default,
+        isIcon: props.isIcon,
         single: props.single,
         dark: props.dark,
         block: props.block,
