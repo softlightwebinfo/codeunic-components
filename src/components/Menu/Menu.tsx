@@ -1,6 +1,6 @@
 // Generated with util/create-component.js
 import React, { useCallback, useState } from "react";
-import { IMenuData, MenuProps } from "./Menu.types";
+import { MenuProps } from "./Menu.types";
 import { BEM } from "../../libs/BEM";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,14 +38,14 @@ const Menu: React.FC<MenuProps> = (props) => {
                             />
                         )}
                     </div>
-                    {(item.menu && state[key]) && <Menu menu={item.menu ?? {}}/>}
+                    {(item.menu && state[key]) && <Menu component={props.component} menu={item.menu ?? {}}/>}
                 </div>
                 return (
                     <li key={key} className={bm.Modifier("item", "active", state[key])}>
-                        {props.component?.(component, {
+                        {(!item.menu && props.component) ? props.component(component, {
                             key,
                             ...item
-                        }) ?? component}
+                        }) : component}
                     </li>
                 )
             })}

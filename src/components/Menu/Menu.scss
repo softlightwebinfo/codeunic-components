@@ -56,7 +56,17 @@
     white-space: nowrap;
 
     &--active {
-      a > #{$then}__element {
+      > #{$then}__element {
+        flex-direction: column;
+        align-items: flex-start;
+
+        > div {
+          color: #fb9678;
+          border-left: 3px solid #fb9678;
+        }
+      }
+
+      > a > #{$then}__element {
         flex-direction: column;
         align-items: flex-start;
 
