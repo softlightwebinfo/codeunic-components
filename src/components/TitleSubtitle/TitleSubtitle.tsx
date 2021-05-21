@@ -14,9 +14,9 @@ const TitleSubtitle: React.FC<TitleSubtitleProps> = (props) => {
         <div className={bm.toString()} style={props.style}>
             <h2>{props.title}</h2>
             <div>
-                {props.subTitle.split("\n").map((item, index) => (
+                {typeof props.subTitle === "string" ? props.subTitle.split("\n").map((item, index) => (
                     <p key={index}>{item}</p>
-                ))}
+                )) : props.subTitle}
             </div>
             {props.children && <div>{props.children}</div>}
         </div>
