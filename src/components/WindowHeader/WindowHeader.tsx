@@ -10,10 +10,11 @@ const WindowHeader: React.FC<WindowHeaderProps> = (props) => {
     return (
         <div className={bm.toString()} style={props.style}>
             <div className={bm.Children("left")}>
-                <Rounded theme={"danger"}/>
-                <Rounded theme={"warning"}/>
-                <Rounded theme={"success"}/>
+                <Rounded theme={"danger"} onClick={props.onClickClose}/>
+                <Rounded theme={"warning"} onClick={props.onClickMinimize}/>
+                <Rounded theme={"success"} onClick={props.onClickMaximize}/>
             </div>
+            <div>{props.title}</div>
         </div>
     );
 }

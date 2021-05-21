@@ -9,7 +9,7 @@ const Rounded: React.FC<RoundedProps> = (props) => {
     });
     bm.Append(props.className)
     return (
-        <div className={bm.toString()} style={props.style}/>
+        <div onClick={props.onClick} className={bm.toString()} style={props.style}/>
     );
 }
 

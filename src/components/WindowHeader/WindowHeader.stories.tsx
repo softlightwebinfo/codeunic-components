@@ -7,5 +7,5 @@ export default {
 };
 
 export const Default = () => <WindowHeader
-
+    title={"Upcoming Events"}
 />;
