@@ -82,6 +82,8 @@ import Popover from './Popover/Popover';
 import Portal from './Portal/Portal';
 import PriceBox from './PriceBox/PriceBox';
 import PriceRow from './PriceRow/PriceRow';
+import Progress from './Progress/Progress';
+import ProgressBar from './ProgressBar/ProgressBar';
 import Quote from './Quote/Quote';
 import RatedItem from './RatedItem/RatedItem';
 import Round from './Round/Round';
@@ -205,6 +207,8 @@ export {
 	Portal,
 	PriceBox,
 	PriceRow,
+	Progress,
+	ProgressBar,
 	Quote,
 	RatedItem,
 	Round,
