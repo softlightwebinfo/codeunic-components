@@ -1,9 +1,11 @@
 import ActiveItem from './ActiveItem/ActiveItem';
 import AlertCircleIcon from './AlertCircleIcon/AlertCircleIcon';
+import AlertPmo from './AlertPmo/AlertPmo';
 import Arrow from './Arrow/Arrow';
 import Avatar from './Avatar/Avatar';
 import AvatarHeader from './AvatarHeader/AvatarHeader';
 import AvatarTitle from './AvatarTitle/AvatarTitle';
+import Avatars from './Avatars/Avatars';
 import Badge from './Badge/Badge';
 import Badges from './Badges/Badges';
 import BigCalendar from './BigCalendar/BigCalendar';
@@ -84,6 +86,7 @@ import PriceBox from './PriceBox/PriceBox';
 import PriceRow from './PriceRow/PriceRow';
 import Progress from './Progress/Progress';
 import ProgressBar from './ProgressBar/ProgressBar';
+import ProjectCard from './ProjectCard/ProjectCard';
 import Quote from './Quote/Quote';
 import RatedItem from './RatedItem/RatedItem';
 import Round from './Round/Round';
@@ -125,10 +128,12 @@ import WindowHeader from './WindowHeader/WindowHeader';
 export {
 	ActiveItem,
 	AlertCircleIcon,
+	AlertPmo,
 	Arrow,
 	Avatar,
 	AvatarHeader,
 	AvatarTitle,
+	Avatars,
 	Badge,
 	Badges,
 	BigCalendar,
@@ -209,6 +214,7 @@ export {
 	PriceRow,
 	Progress,
 	ProgressBar,
+	ProjectCard,
 	Quote,
 	RatedItem,
 	Round,

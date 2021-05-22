@@ -13,7 +13,7 @@ const Progress: React.FC<ProgressProps> = (props) => {
     return (
         <div data-testid="Progress" className={bm.toString()} style={props.style}>
             <div>
-                <span><FontAwesomeIcon icon={faTimesCircle}/>{props.title}</span>
+                <span>{props.icon ?? <FontAwesomeIcon icon={faTimesCircle}/>}{props.title}</span>
                 <Badge theme={props.labelTheme} label={props.label}/>
             </div>
             <ProgressBar percentage={props.percentage}/>

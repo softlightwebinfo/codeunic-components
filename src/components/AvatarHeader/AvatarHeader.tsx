@@ -20,6 +20,7 @@ const AvatarHeader: React.FC<AvatarHeaderProps> = (props) => {
                 <span>{props.title}</span>
                 {props.subTitle && <span>{props.subTitle}</span>}
             </div>
+            {props.children && (<span>{props.children}</span>)}
         </div>
     );
 }

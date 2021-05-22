@@ -1,0 +1,29 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Avatars {
+  display: flex;
+  align-items: center;
+
+  .Avatar {
+    margin-left: -10px;
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+
+    img {
+      $sz: 25px;
+      width: $sz;
+      height: $sz;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  span {
+    font-size: 1.4em;
+    margin-left: 10px;
+  }
+}
