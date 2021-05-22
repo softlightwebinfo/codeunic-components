@@ -10,7 +10,6 @@ export default {
 };
 
 export const Default = () => <ProjectCard
-
     description={"Design and develop the DashLite template for Envato Marketplace."}
     subTitle={"euroanuncio"}
     title={"Casas en ocasion"}

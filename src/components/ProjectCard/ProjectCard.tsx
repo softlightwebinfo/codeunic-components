@@ -2,7 +2,7 @@
 import React from "react";
 import { ProjectCardProps } from "./ProjectCard.types";
 import { BEM } from "../../libs/BEM";
-import { Widget } from "../../widgets";
+import Widget  from "../../widgets/Widget/Widget";
 import AvatarHeader from "../AvatarHeader/AvatarHeader";
 import TextInfo from "../TextInfo/TextInfo";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
