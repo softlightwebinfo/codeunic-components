@@ -8,7 +8,7 @@ import TextInfo from "../TextInfo/TextInfo";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Progress from "../Progress/Progress";
-import { Avatars } from "../Avatars/Avatars";
+import Avatars  from "../Avatars/Avatars";
 import Avatar from "../Avatar/Avatar";
 import Badge from "../Badge/Badge";
 
