@@ -19,4 +19,3 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
 }
 
 export default CardHeader;
-

@@ -1233,6 +1233,20 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@codeunic/components@^0.24.2":
+  version "0.24.2"
+  resolved "https://registry.yarnpkg.com/@codeunic/components/-/components-0.24.2.tgz#c383f75e7995c0cc73ea58b2042e3d50a1c08e16"
+  integrity sha512-b9eqOdnLR1lq6AZR7riQVfkt4QSw9jBhPiufEhs6LVplYTP6Vrpv6U1e+b7+JQmdbmh5uVTniwwesOLeSzvEtQ==
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.35"
+    "@fortawesome/free-brands-svg-icons" "^5.15.3"
+    "@fortawesome/free-solid-svg-icons" "^5.15.3"
+    "@fortawesome/react-fontawesome" "^0.1.14"
+    "@m2g/react-plyr" "^1.2.4"
+    hls.js "^1.0.2"
+    rollup-plugin-sass "^1.2.2"
+    sass "^1.32.13"
+
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.2.tgz#8f03a22a04de437254e8ce8cc84ba39689288752"

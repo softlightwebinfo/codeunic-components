@@ -1,0 +1,9 @@
+// Generated with util/create-component.js
+@import "src/sass/variables";
+@import "src/sass/typography";
+
+.ViewForumThreads {
+  @include font-defaults;
+
+  color: $harvey-green;
+}

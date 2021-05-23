@@ -1,0 +1,26 @@
+// Generated with util/create-component.js
+@import "src/sass/variables";
+@import "src/sass/typography";
+
+.ViewNotes {
+  position: relative;
+  background: #f0ecdb;
+  border: 1px solid #ebebeb;
+  border-left: 0;
+  border-right: 0;
+  display: grid;
+  grid-template-columns: 1fr 24%;
+
+  &__notes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+  }
+
+  &__content {
+    background: #fffced;
+    position: relative;
+  }
+}

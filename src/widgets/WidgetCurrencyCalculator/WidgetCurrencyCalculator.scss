@@ -1,0 +1,12 @@
+// Generated with util/create-component.js
+@import "src/sass/variables";
+@import "src/sass/typography";
+
+.WidgetCurrencyCalculator {
+  &__currency {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}

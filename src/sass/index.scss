@@ -9,6 +9,7 @@
 @import '../components/Avatars/Avatars.scss';
 @import '../components/Badge/Badge.scss';
 @import '../components/Badges/Badges.scss';
+@import '../components/BigButton/BigButton.scss';
 @import '../components/BigCalendar/BigCalendar.scss';
 @import '../components/Breadcrumbs/Breadcrumbs.scss';
 @import '../components/Button/Button.scss';
@@ -75,6 +76,8 @@
 @import '../components/Messenger/Messenger.scss';
 @import '../components/Nav/Nav.scss';
 @import '../components/Navbar/Navbar.scss';
+@import '../components/Note/Note.scss';
+@import '../components/NoteContent/NoteContent.scss';
 @import '../components/Overlay/Overlay.scss';
 @import '../components/Panel/Panel.scss';
 @import '../components/PanelTask/PanelTask.scss';
@@ -100,6 +103,7 @@
 @import '../components/SlickList/SlickList.scss';
 @import '../components/SlickVideoItem/SlickVideoItem.scss';
 @import '../components/SocialIcons/SocialIcons.scss';
+@import '../components/StatContent/StatContent.scss';
 @import '../components/Status/Status.scss';
 @import '../components/Step/Step.scss';
 @import '../components/StepItem/StepItem.scss';
@@ -128,6 +132,8 @@
 @import '../components/WindowHeader/WindowHeader.scss';
 
 @import '../widgets/Widget/Widget.scss';
+@import '../widgets/WidgetCurrencyCalculator/WidgetCurrencyCalculator.scss';
+@import '../widgets/WidgetDateTime/WidgetDateTime.scss';
 @import '../widgets/WidgetRatedItem/WidgetRatedItem.scss';
 @import '../widgets/WidgetStat/WidgetStat.scss';
 @import '../widgets/WidgetStep/WidgetStep.scss';
@@ -138,6 +144,9 @@
 @import '../layouts/LayoutVideoPremium/LayoutVideoPremium.scss';
 
 @import '../views/ViewCallVideo/ViewCallVideo.scss';
+@import '../views/ViewForumList/ViewForumList.scss';
+@import '../views/ViewForumThreads/ViewForumThreads.scss';
+@import '../views/ViewNotes/ViewNotes.scss';
 @import '../views/ViewPublishTicket/ViewPublishTicket.scss';
 @import '../views/ViewTicketHomePage/ViewTicketHomePage.scss';
 @import '../views/ViewVideoConference/ViewVideoConference.scss';

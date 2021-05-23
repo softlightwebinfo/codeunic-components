@@ -6,10 +6,12 @@ import dayjs from 'dayjs';
 import weekday from "dayjs/plugin/weekday";
 import "dayjs/locale/es";
 import localeData from 'dayjs/plugin/localeData'
+import duration from 'dayjs/plugin/duration'
 
 dayjs.extend(localeData)
 dayjs.locale('es')
 dayjs.extend(weekday);
+dayjs.extend(duration);
 
 const Calendar: React.FC<CalendarProps> = (props) => {
     const bm = new BEM("Calendar", {

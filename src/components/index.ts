@@ -8,6 +8,7 @@ import AvatarTitle from './AvatarTitle/AvatarTitle';
 import Avatars from './Avatars/Avatars';
 import Badge from './Badge/Badge';
 import Badges from './Badges/Badges';
+import BigButton from './BigButton/BigButton';
 import BigCalendar from './BigCalendar/BigCalendar';
 import Breadcrumbs from './Breadcrumbs/Breadcrumbs';
 import Button from './Button/Button';
@@ -74,6 +75,8 @@ import Menu from './Menu/Menu';
 import Messenger from './Messenger/Messenger';
 import Nav from './Nav/Nav';
 import Navbar from './Navbar/Navbar';
+import Note from './Note/Note';
+import NoteContent from './NoteContent/NoteContent';
 import Overlay from './Overlay/Overlay';
 import Panel from './Panel/Panel';
 import PanelTask from './PanelTask/PanelTask';
@@ -99,6 +102,7 @@ import SlickItem from './SlickItem/SlickItem';
 import SlickList from './SlickList/SlickList';
 import SlickVideoItem from './SlickVideoItem/SlickVideoItem';
 import SocialIcons from './SocialIcons/SocialIcons';
+import StatContent from './StatContent/StatContent';
 import Status from './Status/Status';
 import Step from './Step/Step';
 import StepItem from './StepItem/StepItem';
@@ -136,6 +140,7 @@ export {
 	Avatars,
 	Badge,
 	Badges,
+	BigButton,
 	BigCalendar,
 	Breadcrumbs,
 	Button,
@@ -202,6 +207,8 @@ export {
 	Messenger,
 	Nav,
 	Navbar,
+	Note,
+	NoteContent,
 	Overlay,
 	Panel,
 	PanelTask,
@@ -227,6 +234,7 @@ export {
 	SlickList,
 	SlickVideoItem,
 	SocialIcons,
+	StatContent,
 	Status,
 	Step,
 	StepItem,
