@@ -1,0 +1,18 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.NoResultFound {
+  color: rgba(0, 0, 0, 0.38);
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.03);
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+
+  svg {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,45 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Message {
+  display: flex;
+  gap: 20px;
+  $then: &;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__content {
+    span {
+      font-size: .8em;
+      line-height: 1;
+
+      #{$then}--isFrom & {
+        justify-content: flex-end;
+        display: flex;
+      }
+    }
+
+    p {
+      color: #fff;
+      border-radius: 8px 8px 8px 0;
+      background-color: #6200EE;
+      padding: 10px;
+      font-size: 1em;
+      max-width: 600px;
+      margin-bottom: 8px;
+
+      #{$then}--isFrom & {
+        color: rgba(0, 0, 0, 0.6);
+        border-radius: 8px 8px 0 8px;
+        background-color: rgba(2, 2, 2, 0.04);
+      }
+    }
+  }
+
+  &--isFrom {
+    justify-content: flex-end;
+  }
+}

@@ -171,3 +171,9 @@
   margin: auto;
   color: var(--template-secondary);
 }
+
+@mixin Ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

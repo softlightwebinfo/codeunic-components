@@ -11,6 +11,7 @@ const Input: React.FC<InputProps> = (props) => {
     const bm = new BEM("Input", {
         default: props.default,
         search: props.search,
+        border: props.border,
     });
     bm.Append(props.className);
     return (

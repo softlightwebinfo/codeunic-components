@@ -9,6 +9,7 @@ export interface InputProps extends IProps, FormLabelProps {
     placeholder?: string;
     type?: TInputType;
     default?: boolean;
+    border?: boolean;
     search?: boolean;
 
     onChange?(evt: any);

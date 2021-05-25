@@ -1,0 +1,35 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/mixin.scss";
+
+.ChatContact {
+  padding: 10px;
+
+  & + & {
+    border-top: 1px solid gainsboro;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    color: var(--iq-dark);
+    @include Ellipsis;
+  }
+
+  .AvatarHeader__content {
+    @include Ellipsis;
+  }
+
+  &__subTitle {
+    @include Ellipsis;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &--active {
+    background: rgba(2, 2, 2, 0.04);
+  }
+}

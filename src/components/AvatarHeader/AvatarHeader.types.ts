@@ -7,8 +7,8 @@ export interface AvatarHeaderProps extends IProps {
     white?: boolean;
     big?: boolean;
     avatar: string | ReactNode;
-    title: string;
-    subTitle?: string;
+    title: string | ReactNode;
+    subTitle?: string | ReactNode;
     top?: string;
     noImage?: boolean;
 }
