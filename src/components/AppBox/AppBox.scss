@@ -1,0 +1,37 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.AppBox {
+  flex: 1;
+  display: flex;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  flex-direction: column;
+  height: 100vh;
+  @media (min-width: 960px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  @media (min-width: 1920px) {
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  &__content {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 20%), 0px 2px 1px rgba(0, 0, 0, 12%), 0px 1px 1px rgba(0, 0, 0, 14%);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,32 @@
+// Generated with util/create-component.js
+@import "src/sass/variables";
+@import "src/sass/typography";
+
+.ViewContact {
+  .TextInfo {
+    padding: 20px;
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  &__aside-button {
+    transition: all 0.3s ease;
+    padding: 24px 24px 20px;
+  }
+
+  &__menu {
+    margin-right: 20px;
+  }
+
+  &__right {
+    flex: 1;
+    height: calc(100vh - 70px - 60px);
+    overflow: auto;
+  }
+}

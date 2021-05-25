@@ -49,3 +49,18 @@
   transition: opacity .5s ease .3s;
   transition: 1s;
 }
+
+%MenuItemActive {
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  padding: 9px 16px 10px 20px;
+  //font-size: 14px;
+  transition: all 0.3s ease;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #6200EE;
+  background-color: rgba(98, 0, 238, 0.1);
+}

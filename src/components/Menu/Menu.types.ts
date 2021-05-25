@@ -1,6 +1,6 @@
 // Generated with util/create-component.js
 import { IProps } from "../../interfaces/IProps";
-import { IObjectCustom } from "../../interfaces/TObject";
+import { IObject, IObjectCustom } from "../../interfaces/TObject";
 import { ReactNode } from "react";
 
 export type IMenu = {
@@ -12,9 +12,10 @@ export type IMenu = {
 export type TMenu = IObjectCustom<IMenu>;
 
 export interface MenuProps extends IProps {
+    active?: IObject;
     horizontal?: boolean;
     menu: TMenu;
-
+    default?: boolean;
     component?(component: ReactNode, data: IMenuData);
 }
 

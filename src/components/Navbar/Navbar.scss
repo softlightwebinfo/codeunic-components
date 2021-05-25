@@ -4,11 +4,7 @@
 
 .Navbar {
   padding: 0 15px 0 30px;
-  min-height: 73px;
-  position: fixed;
-  top: 0;
-  left: auto;
-  right: 0;
+  min-height: 70px;
   width: calc(100% - 300px);
   display: flex;
   z-index: 99;
@@ -45,7 +41,27 @@
     flex: 1;
   }
 
+  &__title {
+    margin-right: 40px;
+    color: black;
+  }
+
   &--default {
     width: 100%;
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  &--borderBottom {
+    border-bottom: 1px solid gainsboro;
   }
 }

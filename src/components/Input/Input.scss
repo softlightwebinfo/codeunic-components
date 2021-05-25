@@ -20,4 +20,14 @@
       }
     }
   }
+
+  &--search {
+    display: flex;
+    align-items: center;
+    color: var(--iq-body-text);
+
+    input {
+      color: var(--iq-body-text);
+    }
+  }
 }

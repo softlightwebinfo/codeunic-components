@@ -1,0 +1,11 @@
+// Generated with util/create-component.js
+@import "../../sass/variables.scss";
+@import "../../sass/typography.scss";
+
+.Aside {
+  width: 256px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-right: solid 1px gainsboro;
+  height: 100%;
+}

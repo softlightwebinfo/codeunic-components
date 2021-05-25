@@ -6,9 +6,10 @@ import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Menu: React.FC<MenuProps> = (props) => {
-    const [state, setState] = useState({});
+    const [state, setState] = useState(props.active ?? {});
     const bm = new BEM("Menu", {
         horizontal: props.horizontal,
+        default: props.default,
     });
     bm.Append(props.className);
 

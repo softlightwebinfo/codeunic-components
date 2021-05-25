@@ -1,7 +1,9 @@
 import ActiveItem from './ActiveItem/ActiveItem';
 import AlertCircleIcon from './AlertCircleIcon/AlertCircleIcon';
 import AlertPmo from './AlertPmo/AlertPmo';
+import AppBox from './AppBox/AppBox';
 import Arrow from './Arrow/Arrow';
+import Aside from './Aside/Aside';
 import Avatar from './Avatar/Avatar';
 import AvatarHeader from './AvatarHeader/AvatarHeader';
 import AvatarTitle from './AvatarTitle/AvatarTitle';
@@ -133,7 +135,9 @@ export {
 	ActiveItem,
 	AlertCircleIcon,
 	AlertPmo,
+	AppBox,
 	Arrow,
+	Aside,
 	Avatar,
 	AvatarHeader,
 	AvatarTitle,
