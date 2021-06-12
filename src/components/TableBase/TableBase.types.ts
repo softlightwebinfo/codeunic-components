@@ -3,6 +3,8 @@ import { IProps } from "../../interfaces/IProps";
 import { IObject } from "../../interfaces/TObject";
 
 export interface TableBaseProps extends IProps {
+    onClick?(row: ITableRow, col: ITableColumn): void;
+
     stripe?: boolean;
     hover?: boolean;
     dark?: boolean;

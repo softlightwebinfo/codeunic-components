@@ -10,7 +10,7 @@ const TableColumn: React.FC<TableColumnProps> = (props) => {
     bm.Append(props.className)
     const Component = props.isHeading ? "th" : "td";
     return (
-        <Component className={bm.toString()} style={props.style}>
+        <Component onClick={props.onClick} className={bm.toString()} style={props.style}>
             {props.children}
         </Component>
     );

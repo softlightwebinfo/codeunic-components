@@ -26,7 +26,7 @@ const TableBase: React.FC<TableBaseProps> = (props) => {
                 {props.rows.map((row, index) => (
                     <TableRow key={row.id ?? index}>
                         {props.columns.map((col) => (
-                            <TableColumn key={col.key}>
+                            <TableColumn onClick={() => props?.onClick?.(row, col)} key={col.key}>
                                 {row[col.key]}
                             </TableColumn>
                         ))}
