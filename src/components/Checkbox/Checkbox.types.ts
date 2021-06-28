@@ -3,6 +3,8 @@ import { IProps } from "../../interfaces/IProps";
 import { FormLabelProps } from "../FormLabel/FormLabel.types";
 
 export interface CheckboxProps extends IProps {
+    defaultValue?: boolean;
+    id?: string;
     label?: FormLabelProps;
     text: string;
     info?: string;

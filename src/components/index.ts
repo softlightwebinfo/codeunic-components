@@ -54,10 +54,12 @@ import DropdownMenu from './DropdownMenu/DropdownMenu';
 import Flyout from './Flyout/Flyout';
 import Footer from './Footer/Footer';
 import FooterCopyright from './FooterCopyright/FooterCopyright';
+import Form from './Form/Form';
 import FormGroup from './FormGroup/FormGroup';
 import FormLabel from './FormLabel/FormLabel';
 import Grid from './Grid/Grid';
 import GridColumn from './GridColumn/GridColumn';
+import HeadExample from './HeadExample/HeadExample';
 import HeaderItems from './HeaderItems/HeaderItems';
 import HeaderTimes from './HeaderTimes/HeaderTimes';
 import Hr from './Hr/Hr';
@@ -193,10 +195,12 @@ export {
 	Flyout,
 	Footer,
 	FooterCopyright,
+	Form,
 	FormGroup,
 	FormLabel,
 	Grid,
 	GridColumn,
+	HeadExample,
 	HeaderItems,
 	HeaderTimes,
 	Hr,

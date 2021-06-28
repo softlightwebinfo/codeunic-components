@@ -2,32 +2,45 @@
 @import "../../sass/mixin.scss";
 
 .Badge {
+  $then: &;
+  position: relative;
   display: inline-block;
-  padding: .25em .4em;
-  font-size: 70%;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 5px;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  @include backgroundColor(false);
+  @include backgroundColor(false, '--', '&__content');
 
-  &--clip {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    min-width: 60px;
-    width: auto;
-    font-size: 14px;
-    border-radius: 12px;
-    padding: 0 12px;
-  }
+  &__content {
+    padding: .25em .4em;
+    font-size: 70%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 5px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
-  &--no-radius {
-    border-radius: 0;
+    #{$then}--clip & {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      min-width: 60px;
+      width: auto;
+      font-size: 14px;
+      border-radius: 12px;
+      padding: 0 12px;
+    }
+
+    #{$then}--no-radius & {
+      border-radius: 0;
+    }
+
+    #{$then}--push & {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      transform-origin: 100% 0%;
+    }
   }
 }

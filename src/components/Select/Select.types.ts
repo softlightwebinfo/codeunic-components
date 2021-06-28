@@ -6,6 +6,7 @@ export interface SelectProps extends IProps {
     onChange?(event: any): void;
 
     value?: string;
+    id?: string;
     label?: FormLabelProps;
     options: ISelectOption[];
 }

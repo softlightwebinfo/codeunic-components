@@ -10,11 +10,13 @@ const Badge: React.FC<BadgeProps> = (props) => {
         radius: radius,
         "no-radius": !radius,
         clip: props.clip,
+        push: props.push,
     });
     bm.Append(props.className);
     return (
         <div className={bm.toString()} style={props.style}>
-            <span>{props.label}</span>
+            <span className={bm.Children("content")}>{props.label}</span>
+            {props.children}
         </div>
     );
 }

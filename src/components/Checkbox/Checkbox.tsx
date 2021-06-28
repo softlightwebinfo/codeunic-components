@@ -14,7 +14,7 @@ const Checkbox: React.FC<CheckboxProps> = (props) => {
     return (
         <FormLabel {...props.label} className={bm.toString()} style={props.style}>
             <div className={bm.Children("wrapper")}>
-                <Input default type="checkbox"/>
+                <Input defaultValue={props.defaultValue} id={props.id} default type="checkbox"/>
             </div>
             <span>{props.text}</span>
             {props.info && (

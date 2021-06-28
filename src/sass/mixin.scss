@@ -7,8 +7,8 @@
   -o-transition: $attr;
 }
 
-@mixin backgroundColor($hover: true, $dash: '--') {
-  &#{$dash}primary {
+@mixin backgroundColor($hover: true, $dash: '--', $self: '') {
+  &#{$dash}primary #{$self}{
     color: #fff;
     background-color: var(--iq-primary);
 
@@ -19,7 +19,7 @@
     }
   }
 
-  &#{$dash}secondary {
+  &#{$dash}secondary #{$self}{
     color: #fff;
     background-color: var(--iq-secondary);
 
@@ -30,7 +30,7 @@
     }
   }
 
-  &#{$dash}dark {
+  &#{$dash}dark #{$self}{
     color: #fff;
     background-color: $harvey-black;
     @if ($hover) {
@@ -39,7 +39,7 @@
       }
     }
   }
-  &#{$dash}success {
+  &#{$dash}success #{$self}{
     color: #fff;
     background-color: var(--iq-success);
     @if ($hover) {
@@ -48,7 +48,7 @@
       }
     }
   }
-  &#{$dash}warning {
+  &#{$dash}warning #{$self}{
     color: #fff;
     background-color: var(--iq-warning);
     @if ($hover) {
@@ -57,7 +57,7 @@
       }
     }
   }
-  &#{$dash}danger {
+  &#{$dash}danger #{$self}{
     color: #fff;
     background-color: var(--red);
     @if ($hover) {
@@ -66,7 +66,7 @@
       }
     }
   }
-  &#{$dash}white {
+  &#{$dash}white #{$self}{
     color: black;
     background-color: white;
     @if ($hover) {

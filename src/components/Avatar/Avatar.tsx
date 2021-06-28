@@ -12,7 +12,7 @@ const Avatar: React.FC<AvatarProps> = (props) => {
     });
     bm.Append(props.className);
     return (
-        <div className={bm.toString()} style={props.style}>
+        <div onClick={props.onClick} className={bm.toString()} style={props.style}>
             {props.noImage ? (props.image) : (
                 <Image src={props.image.toString()}/>
             )}

@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/components",
-  "version": "0.29.5",
+  "version": "0.29.6",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [

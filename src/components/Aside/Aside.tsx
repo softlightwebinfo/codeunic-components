@@ -1,7 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
 import { AsideProps } from "./Aside.types";
-import { BEM } from "../..";
+import { BEM } from "../../libs/BEM";
 
 const Aside: React.FC<AsideProps> = (props) => {
     const bm = new BEM("Aside", {});

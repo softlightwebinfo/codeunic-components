@@ -8,4 +8,5 @@ export interface DashboardProps extends IProps {
     menu: MenuProps;
     sidebar: SidebarProps;
     navbar: NavbarProps;
+    initialOpen?: boolean;
 }

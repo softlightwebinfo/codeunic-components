@@ -7,4 +7,7 @@ export interface SidebarProps extends IProps {
 
     image?: string;
     logo?: string;
+    open?: boolean;
+
+    onClickToggle?(cb: (open: boolean) => boolean): void;
 }

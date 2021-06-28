@@ -3,11 +3,25 @@
 @import "../../sass/typography.scss";
 
 .Dashboard {
+  $then: &;
+
   &__content {
     overflow: hidden;
     margin-left: 300px;
     padding: 73px 0;
     min-height: 100vh;
     transition: all .3s ease-out 0s;
+  }
+
+  .Sidebar__logo {
+    width: 300px;
+  }
+
+  .Sidebar--close {
+    width: 0;
+
+    ~ .Dashboard__content {
+      margin-left: 0;
+    }
   }
 }
