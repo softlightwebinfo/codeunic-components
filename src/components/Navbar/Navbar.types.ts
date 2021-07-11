@@ -1,12 +1,12 @@
 // Generated with util/create-component.js
-import { IProps } from "../../interfaces/IProps";
-import { ReactNode } from "react";
-import { EOnClick } from "../../types/events.types";
+import {IProps} from "../../interfaces/IProps";
+import {ReactNode} from "react";
+import {EOnClick} from "../../types/events.types";
 
 export interface NavbarProps extends IProps {
     onClickToggle?(event: EOnClick);
 
-    title?: string;
+    title?: string | ReactNode;
     isToggle?: boolean;
     borderBottom?: boolean;
     white?: boolean;
